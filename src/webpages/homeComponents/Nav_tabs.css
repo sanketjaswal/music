@@ -1,0 +1,138 @@
+
+.tabs_holding_circle {
+  /* background: repeating-linear-gradient(#9c9c9c 0%, #ffffff 8%,#9c9c9c 16% ); */
+  width: 850px;
+  height: 850px;
+  position: absolute;
+  left: -220px;
+  top: -210px;
+  border-radius: 100%;
+  transform: rotate(0deg);
+  transition: transform 1.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.753);
+  border-bottom: 2px solid rgb(105, 105, 105); */
+}
+
+.tabs_holding_circle li {
+  /* background-color: rgb(8, 8, 3); */
+  width: 10%;
+  text-align: center;
+}
+
+.tabs_holding_circle li:nth-of-type(1) {
+  transform: rotate(-90deg);
+  position: absolute;
+  left: 23.5em;
+  top: -7.8em;
+}
+
+.tabs_holding_circle li:nth-of-type(2) {
+  transform: rotate(-45deg);
+  position: absolute;
+  left: 47.4em;
+  top: 2.2em;
+}
+.tabs_holding_circle li:nth-of-type(3) {
+  position: absolute;
+  left: 57.5em;
+  top: 25.3em;
+}
+.tabs_holding_circle li:nth-of-type(4) {
+  transform: rotate(45deg);
+  position: absolute;
+  left: 48.2em;
+  top: 49.1em;
+}
+.tabs_holding_circle li:nth-of-type(5) {
+  transform: rotate(90deg);
+  position: absolute;
+  left: 24.3em;
+  top: 59.2em;
+}
+
+.tabs_holding_circle li {
+  list-style: none;
+  padding: none;
+}
+
+.tabs_holding_circle li a {
+  color: white;
+  text-decoration: none;
+  font-size: 27px;
+}
+
+.navs_hider{
+  width: 750px;
+  height: 300px;
+  background-color: var(--body_color);
+  position: absolute;
+  left: 0px;
+  top: 503px;
+}
+
+.playing_stick_container{
+  width: 500px;
+  height: 650px;
+  position: absolute;
+  background: repeating-linear-gradient(#1f1f1f 0%, #242424 25%,#1f1f1f 50% );
+  left: 110px;
+  top: 183px;
+  transform : rotate(50deg);
+  border-radius: 10px;
+  box-shadow: 9px 10px 10px rgba(0, 0, 0, 0.753);
+  /* border-bottom: 4px solid ; */
+  border-right: 5px solid rgb(34, 34, 34);
+  border-bottom: 6px solid rgb(34, 34, 34)  ;
+}
+
+.make_visible_div {
+  background: radial-gradient(rgba(255, 255, 255, 0.048) 0%, transparent 30%);
+  width: 300px;
+  height: 150px;
+  position: absolute;
+  left: 37em;
+  top: 8.6em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  opacity: 0;
+  transition: 1s;
+}
+
+.make_visible_div:hover{
+  opacity: 1;
+  transition: .5s;
+}
+
+#up_btn{
+  top: 0;
+}
+
+#down_btn{
+  top:115px
+}
+
+.arrows {
+  /* margin-block: 30px; */
+  font-size: 30px;
+  font-family: monospace;
+  cursor: pointer;
+  position: absolute;
+}
+
+.arrows:hover{
+  color: yellow;
+}
+
+.arrows:active{
+  color: lightgreen;
+}
+
+#down_btn {
+  transform: scale(1, -1);
+}
+

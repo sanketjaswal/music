@@ -1,0 +1,108 @@
+.base_rotator {
+  position: absolute;
+  top: 430px;
+  left: 630px;
+  transform: rotate(50deg);
+  transition: ease-in-out 1.5s;
+}
+
+.stick_holder {
+  width: 60px;
+  height: 80px;
+  /* background-color: #141414; */
+  background: repeating-linear-gradient(
+    to right,
+    #141414 0%,
+    #333333 25%,
+    #141414 50%
+  );
+  /* border-radius: 15px; */
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+  /* margin-top: 30px; */
+}
+
+.base_stick {
+  width: 22px;
+  height: 300px;
+  /* background-color: #caa472; */
+  background: repeating-linear-gradient(
+    to right,
+    #caa472 0%,
+    #dbb98b 25%,
+    #caa472 50%
+  );
+  /* border-bottom: 20px solid #141414; */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.616);
+}
+
+.base_black_part {
+  width: 20px;
+  height: 40px;
+  background: repeating-linear-gradient(
+    to right,
+    #141414 0%,
+    #272727 25%,
+    #141414 50%
+  );
+  position: absolute;
+  top: 305px;
+  display: flex;
+  justify-content: center;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.616);
+
+}
+
+.small_rotator {
+  position: absolute;
+  top: 10px;
+  transform: rotate(20deg);
+  transition: ease-in-out 2s;
+}
+
+.second_black_part {
+  width: 30px;
+  height: 50px;
+  background: repeating-linear-gradient(
+    to right,
+    #141414 0%,
+    #272727 25%,
+    #141414 50%
+  );
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.616);
+
+}
+
+.side_bar {
+  width: 7px;
+  height: 20px;
+  background: repeating-linear-gradient(
+    to right,
+    #141414 0%,
+    #272727 50%,
+    #141414 100%
+  );
+  transform: rotate(90deg);
+  position: absolute;
+    left: -12px;
+}
+
+.second_main_part {
+  width: 30px;
+  height: 90px;
+  position: absolute;
+  top: 45px;
+  box-shadow: 8px 8px 13px  rgba(0, 0, 0, 0.616);
+  background: repeating-linear-gradient(
+    to right,
+    #caa472 0%,
+    #dbb98b 25%,
+    #caa472 50%
+  );
+}

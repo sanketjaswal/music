@@ -1,0 +1,130 @@
+.sd_stand_conatiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  transition: 0.4s;
+  /* background-color: cornflowerblue; */
+  bottom: -35px;
+  /* left: -11px; */
+}
+
+.sd_stand_top_container {
+  display: flex;
+  justify-content: center;
+  /* background-color: crimson; */
+}
+
+.sd_stand_left_hold {
+  width: 67px;
+  height: 6px;
+  background-color: var(--drums_steel_bg_color);
+  border: 2px solid var(--drums_border_color);
+  transform: rotate(10deg);
+  display: flex;
+  justify-content: center;
+}
+
+.sd_stand_right_hold {
+  width: 67px;
+  height: 5px;
+  background-color: var(--drums_steel_bg_color);
+  border: 2px solid var(--drums_border_color);
+  transform: rotate(-10deg);
+  display: flex;
+  justify-content: center;
+}
+
+.sd_stand_elbow_ball {
+  width: 11px;
+  height: 11px;
+  background-color: var(--drums_steel_bg_color);
+  border: 2px solid var(--drums_border_color);
+  border-radius: 100%;
+  position: absolute;
+  top: 2px;
+}
+
+.sd_stand_left_holder {
+  width: 4px;
+  height: 10px;
+  background-color: var(--drums_stand_ball_bg_color);
+  border: 1px solid var(--drums_border_color);
+  position: absolute;
+  top: -5px;
+  left: -7px;
+  border-bottom-left-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.sd_stand_right_holder {
+  width: 4px;
+  height: 10px;
+  background-color: var(--drums_stand_ball_bg_color);
+  border: 1px solid var(--drums_border_color);
+  position: absolute;
+  top: -5px;
+  right: -7px;
+  border-bottom-right-radius: 5px;
+}
+
+.sd_stand_ball {
+  width: 11px;
+  height: 11px;
+  background-color: var(--drums_steel_bg_color);
+  border: 2px solid var(--drums_border_color);
+  border-radius: 100%;
+  /* background-color: crimson; */
+  position: absolute;
+  top: -4px;
+}
+
+.sd_stand_mid_bars {
+  width: 5px;
+  background-color: var(--drums_steel_bg_color);
+  border: 2px solid var(--drums_border_color);
+  position: absolute;
+}
+
+#sd_mid_bar_left {
+  transform: rotate(-40deg);
+  left: 53px;
+  top: 0px;
+  height: 60px;
+}
+
+#sd_mid_bar_mid {
+  top: 10px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+#sd_mid_bar_right {
+  transform: rotate(40deg);
+  right: 53px;
+  top: 0px;
+  height: 60px;
+}
+
+.sd_stand_bar_combiner {
+  width: 20px;
+  height: 12px;
+  border-radius: 5px;
+  background-color: var(--drums_steel_bg_color);
+  border: 2px solid var(--drums_border_color);
+  position: absolute;
+  bottom: -15px;
+}
+
+.sd_stand_base_bar {
+  width: 8px;
+  height: 40px;
+  background-color: var(--drums_steel_bg_color);
+  border: 2px solid var(--drums_border_color);
+  position: absolute;
+  bottom: -45px;
+  display: flex;
+  justify-content: center;
+}

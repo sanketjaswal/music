@@ -1,0 +1,103 @@
+#Kick {
+  left: 47.5%;
+  top: 330px;
+}
+
+.cd_steel_ring {
+  height: 228px;
+  width: 228px;
+  border-radius: 100%;
+  position: absolute;
+  border: 3px solid var(--drums_border_color);
+  background-color: var(--drums_bg_color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+#cd_base {
+  height: 210px;
+  width: 210px;
+  border-radius: 100%;
+  background-color: var(--drums_steel_bg_color);
+  border: 3px solid var(--drums_border_color);
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0px 5px rgba(29, 29, 29, 0.39);
+  transition: 0.4s;
+}
+
+#cd_base h1 {
+  color: var(--drums_border_color);
+  transition: 0.4s;
+  font-family: cursive;
+  text-align: center;
+    font-size:34px;
+}
+
+/* .Kick:active{
+
+} */
+
+#Kick:active .cd_steel_ring {
+  height: 238px;
+  width: 238px;
+  transition: 0.1s;
+  background-color: var(--drums_active_bg_color);
+}
+
+#Kick:active #cd_base {
+  height: 220px;
+  width: 220px;
+  transition: 0.1s;
+}
+
+#Kick:active h1 {
+  color: var(--drums_active_bg_color);
+  transition: 0.1s;
+  font-size:38px;
+}
+
+/* stand */
+
+#Kick:active .cd_Stand_holder{
+    width: 12px;
+  height: 53px;
+  transition: 0.1s;
+}
+
+#Kick:active .cd_Stand_stick{
+    width: 7px;
+  height: 102px;
+  transition: 0.1s;
+}
+
+
+#Kick:active #cd_stand_right {
+  right: -120px;
+  transition: 0.1s;
+}
+
+#Kick:active #cd_stand_left {
+  left: -120px;
+  transition: 0.1s;
+}
+
+
+
+
+.md_stand_bottom_bar_holder{
+    width: 60px;
+    height: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 2.5px solid var(--drums_border_color);
+    background-color: var(--drums_steel_bg_color);
+    position:absolute;
+    bottom: -60px;
+    right: -21px;
+    top: -120px;
+}

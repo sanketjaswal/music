@@ -1,0 +1,108 @@
+#md_base {
+  height: 70px;
+  padding-top: 3px;
+}
+
+#md_hooks_cont1 {
+  top: 0px;
+  left: -6px;
+  width: 111%;
+}
+
+#md_hooks_cont2 {
+  bottom: 0px;
+  left: -6px;
+  width: 111%;
+}
+
+#md_steel_bar {
+  width: 130px;
+}
+
+/* Big-Rack-Tom */
+
+#Big-Rack-Tom {
+  left: 40%;
+  top: 155px;
+}
+
+#Big-Rack-Tom .d_base {
+  position: absolute;
+  top: -25px;
+  right: -10px;
+}
+
+#Big-Rack-Tom:active {
+  transform: rotate(-2.6deg);
+  transition: 0.1s;
+}
+
+#Big-Rack-Tom:active .d_base {
+  background-color: var(--drums_active_bg_color );
+  transition: 0.1s;
+  padding-top: 0px;
+  margin-top: 6px;
+}
+
+#Big-Rack-Tom :active #md_steel_bar {
+  height: 5px;
+  width: 131px;
+  transition: 0.1s;
+}
+
+#Big-Rack-Tom:active .d_sb_1 {
+  top: -11px;
+}
+
+#Big-Rack-Tom:active .d_sb_2 {
+  bottom: -11px;
+}
+
+#Big-Rack-Tom:active .md_stand_elbow_holder{
+  transform: rotate(2deg);
+  transition: 0.1s;
+}
+
+/* Small Rack Tom */
+
+#Small-Rack-Tom {
+  left: 54.5%;
+  top: 160px;
+}
+
+#Small-Rack-Tom .d_base {
+  position: absolute;
+  top: -25px;
+  left: -10px;
+}
+
+#Small-Rack-Tom :active {
+  transform: rotate(3deg);
+  transition: 0.1s;
+}
+
+#Small-Rack-Tom:active .d_base {
+  background-color: var(--drums_active_bg_color );
+  transition: 0.1s;
+  padding-top: 0px;
+  margin-top: 9px;
+}
+
+#Small-Rack-Tom :active #md_steel_bar {
+  height: 5px;
+  width: 131px;
+  transition: 0.1s;
+}
+
+#Small-Rack-Tom:active .d_sb_1 {
+  top: -11px;
+}
+
+#Small-Rack-Tom:active .d_sb_2 {
+  bottom: -11px;
+}
+
+#Small-Rack-Tom:active .md_stand_elbow_holder{
+  transform: rotate(-2deg);
+  transition: 0.1s;
+}

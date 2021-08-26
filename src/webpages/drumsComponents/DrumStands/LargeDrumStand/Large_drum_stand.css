@@ -1,0 +1,84 @@
+.ld_stand_conatiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  transition: 0.4s;
+}
+
+.ld_Stand_holder {
+  width: 10px;
+  height: 50px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border: 2px solid var(--drums_border_color);
+  background-color: var(--drums_steel_bg_color);
+  transition: 0.4s;
+  position: relative;
+  z-index: 1;
+}
+
+.ld_stand_lower {
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: flex-end; */
+  /* height: 150px; */
+  position: absolute;
+  
+}
+
+.ld_Stand_stick {
+  width: 5.5px;
+  height: 95px;
+  border-inline: 2px solid var(--drums_border_color);
+  background-color: var(--drums_steel_bg_color);
+  /* position: absolute; */
+  transition: 0.4s;
+}
+
+.ld_Stand_ball {
+  width: 11px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid var(--drums_border_color);
+  background-color: var(--drums_stand_ball_bg_color);
+  /* z-index: 1; */
+  position: absolute;
+  bottom: -5px;
+  transition: 0.4s;
+}
+
+#ld_stand_left_container{
+    top: 55px;
+    left: -7px;
+}
+
+#ld_stand_mid_container{
+    top: 55px;
+    left: 45%;
+}
+
+#ld_stand_right_container{
+    top: 55px;
+    right: -9px;
+}
+
+#ld_stand_left{
+    transform: rotate(12deg);
+    top: 50px;
+    left: -8px;
+}
+
+#ld_stand_mid{
+    transform: rotate(0deg);
+    top: 50px;
+    left: 2px;
+}
+
+#ld_stand_right{
+    transform: rotate(-12deg);
+    top: 50px;
+    right: -8px;
+}

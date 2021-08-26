@@ -1,0 +1,82 @@
+.tab {
+  width: 120px;
+  height: 170px;
+  background-color: var(--audioCubes_tabs_bg_color);
+  margin-inline: 25px;
+  margin-block: 25px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 4px solid var(--audioCubes_tabs_shadow_color);
+  border-left: 3px solid var(--audioCubes_tabs_shadow_color);
+  box-shadow: -2px 1px 5px rgb(0, 0, 0);
+  transition: 1s;
+}
+
+.tab:hover {
+  background-color: rgb(255, 243, 173);
+  --audioCubes_tabs_shadow_color: white;
+  box-shadow: -2px 1px 5px rgb(255, 235, 119);
+  transition: 0s;
+}
+
+.tab:active {
+  border-bottom: 1px solid var(--audioCubes_tabs_shadow_color);
+  border-left: 1px solid var(--audioCubes_tabs_shadow_color);
+  margin-inline: 26px;
+  /* box-shadow: -4px 3px 10px rgb(255, 235, 119); */
+  
+}
+
+.tabText {
+  font-family: monospace;
+  opacity: 0;
+  transition: 800ms;
+}
+
+.audioCubes:hover .tab .tabText {
+  opacity: 1;
+  transition: 500ms;
+}
+
+#F_tab:active {
+  --audioCubes_tabs_shadow_color: white;
+  background-color: rgb(229, 128, 255);
+  transition: 0s;
+}
+
+#G_tab:active {
+  --audioCubes_tabs_shadow_color: white;
+  background-color: rgb(168, 168, 255);
+}
+
+#H_tab:active {
+  --audioCubes_tabs_shadow_color: white;
+  background-color: rgb(174, 250, 255);
+}
+
+#J_tab:active {
+  --audioCubes_tabs_shadow_color: white;
+  background-color: rgb(169, 255, 181);
+}
+
+#V_tab:active {
+  --audioCubes_tabs_shadow_color: white;
+  background-color: rgb(233, 255, 136);
+}
+
+#B_tab:active {
+  --audioCubes_tabs_shadow_color: white;
+  background-color: rgb(255, 213, 136);
+}
+
+#N_tab:active {
+  --audioCubes_tabs_shadow_color: white;
+  background-color: rgb(255, 137, 137);
+}
+
+#M_tab:active {
+  --audioCubes_tabs_shadow_color: white;
+  background-color: rgb(255, 149, 190);
+}

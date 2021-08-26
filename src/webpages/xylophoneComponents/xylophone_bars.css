@@ -1,0 +1,146 @@
+.xylophone_bars {
+  width: 65px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 3px 5px 6px black;
+  transition: 1.5s;
+  color: white;
+}
+
+.xylophone_bars:active {
+  background-color: rgb(255, 255, 255);
+  border-right: 3px solid rgb(172, 172, 172);
+  border-bottom: 4px solid rgb(172, 172, 172);
+  box-shadow: 3px 5px 13px gold; /* white */
+  transition: 0s;
+  color: gold;
+}
+
+.xylophone_bars:active .xylophone_Screws {
+  box-shadow: 1px 1px 8px gold;
+  transition: 0s;
+}
+
+.xylophone_1 {
+  height: 400px;
+  background-color: crimson;
+  border-right: 3px solid rgb(170, 16, 47);
+  border-bottom: 4px solid rgb(170, 16, 47);
+}
+
+.xylophone_2 {
+  height: 370px;
+  background-color: rgb(130, 0, 170);
+  border-right: 3px solid rgb(103, 0, 134);
+  border-bottom: 4px solid rgb(103, 0, 134);
+}
+
+.xylophone_3 {
+  height: 345px;
+  background-color: rgb(0, 105, 167);
+  border-right: 3px solid rgb(0, 82, 129);
+  border-bottom: 4px solid rgb(0, 82, 129);
+}
+
+.xylophone_4 {
+  height: 310px;
+  background-color: rgb(0, 207, 173);
+  border-right: 3px solid rgb(0, 180, 150);
+  border-bottom: 4px solid rgb(0, 180, 150);
+}
+
+.xylophone_5 {
+  height: 275px;
+  background-color: rgb(17, 202, 0);
+  border-right: 3px solid rgb(12, 146, 0);
+  border-bottom: 4px solid rgb(12, 146, 0);
+}
+
+.xylophone_6 {
+  height: 240px;
+  background-color: rgb(211, 190, 0);
+  border-right: 3px solid rgb(182, 164, 0);
+  border-bottom: 4px solid rgb(182, 164, 0);
+}
+
+.xylophone_7 {
+  height: 205px;
+  background-color: rgb(226, 101, 17);
+  border-right: 3px solid rgb(189, 85, 15);
+  border-bottom: 4px solid rgb(189, 85, 15);
+}
+
+.xylophone_8 {
+  height: 170px;
+  background-color: rgb(241, 85, 234);
+  border-right: 3px solid rgb(197, 70, 191);
+  border-bottom: 4px solid rgb(197, 70, 191);
+}
+
+.xylophone_Screws {
+  width: 19px;
+  height: 19px;
+  margin: 0px;
+  border-radius: 100%;
+  background: radial-gradient(
+    rgb(157, 181, 226) 0%,
+    rgb(130, 159, 211) 45%,
+    transparent 100%
+  );
+  border-right: 2px solid rgba(109, 131, 172, 0.856);
+  border-bottom: 2px solid rgba(109, 131, 172, 0.664);
+  box-shadow: 1px 1px 3px black;
+  transition: 5s;
+}
+
+#xylo_audio {
+  display: none;
+}
+
+@media only screen and (max-width: 450px) {
+  .xylophone_bars {
+    width: 50px;
+    border-radius: 15px;
+    font-size: small;
+  }
+
+  .xylophone_1 {
+    height: 280px;
+  }
+
+  .xylophone_2 {
+    height: 260px;
+  }
+
+  .xylophone_3 {
+    height: 240px;
+  }
+
+  .xylophone_4 {
+    height: 220px;
+  }
+
+  .xylophone_5 {
+    height: 200px;
+  }
+
+  .xylophone_6 {
+    height: 180px;
+  }
+
+  .xylophone_7 {
+    height: 160px;
+  }
+
+  .xylophone_8 {
+    height: 140px;
+  }
+
+  .xylophone_Screws {
+    width: 16px;
+    height: 16px;
+  }
+}

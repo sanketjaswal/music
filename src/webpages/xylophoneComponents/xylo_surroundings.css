@@ -1,0 +1,122 @@
+.xylo_home_btn_container {
+  width: 250px;
+  height: 180px;
+  /* background-color: hotpink; */
+  position: absolute;
+  top: -40px;
+  right: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  transform: skewY(10deg) skewX(-10deg) rotate(8deg);
+}
+
+.xylo_home_bars {
+  width: 50px;
+  height: 100%;
+  background-color: rgb(94, 61, 37);
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-right: 3px solid rgb(71, 46, 28);
+  border-bottom: 4px solid rgb(71, 46, 28);
+  box-shadow: 3px 3px 8px black;
+  transition: 1.5s;
+}
+
+.xylo_home_btn_container:hover .xylo_home_bars {
+  box-shadow: 3px 3px 8px white;
+  transition: 0.5s;
+}
+
+.xylo_home_btn {
+  width: 85%;
+  height: 65px;
+  background-color: crimson;
+  border-radius: 15px;
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 4px 2px 8px black;
+  transition: 0.5s;
+  border-right: 3px solid rgb(161, 20, 48);
+  border-bottom: 4px solid rgb(161, 20, 48);
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.xylo_home_btn:active {
+  background-color: rgb(255, 255, 255);
+  border-right: 3px solid rgb(172, 172, 172);
+  border-bottom: 4px solid rgb(172, 172, 172);
+  box-shadow: 2px 4px 15px gold;
+  transition: 0s;
+  color: gold;
+}
+
+.xylo_home_screws {
+  width: 19px;
+  height: 19px;
+  margin-block: 20px;
+  margin-inline: 10px;
+  border-radius: 100%;
+  /* background-color: rgb(130, 159, 211); */
+  background: radial-gradient(
+    rgb(157, 181, 226) 0%,
+    rgb(130, 159, 211) 50%,
+    transparent 100%
+  );
+  /* background: radial-gradient(rgb(255, 230, 91) 0%, gold 45%, transparent 100%);
+  border-right: 2px solid rgba(190, 161, 0, 0.808);
+  border-bottom: 2px solid rgba(190, 161, 0, 0.747); */
+  border-right: 2px solid rgb(109, 131, 172);
+  border-bottom: 2px solid rgb(109, 131, 172);
+  box-shadow: 1px 1px 3px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+
+.xylo_home_btn:active .xylo_home_screws {
+  /* background-color: gold; */
+  transition: 0s;
+  /* border-right: 2px solid rgba(190, 161, 0, 0.808);
+  border-bottom: 2px solid rgba(190, 161, 0, 0.747); */
+  box-shadow: 1px 1px 10px gold;
+}
+
+/* .xylo_home_btn p {
+  font-weight: bold;
+  font-size: 20px;
+} */
+
+@media only screen and (max-width: 450px) {
+  .xylo_home_btn_container {
+    width: 200px;
+    height: 140px;
+    top: 40vh;
+    right: -70px;
+    display: flex;
+    justify-content: space-evenly;
+    transform: skewY(1deg) skewX(-1deg) rotate(94deg);
+  }
+
+  .xylo_home_bars {
+    width: 30px;
+    height: 70%;
+  }
+
+  .xylo_home_btn {
+    width: 75%;
+    height: 50px;
+    font-size: medium;
+  }
+
+  .xylo_home_screws {
+    width: 17px;
+    height: 17px;
+    margin-block: 20px;
+    margin-inline: 7px;
+  }
+}

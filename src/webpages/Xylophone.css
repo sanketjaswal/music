@@ -1,0 +1,55 @@
+.xylophone_page_body {
+  min-width: 100%;
+  min-height: 100vh;
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.xylophone_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: gold; */
+}
+
+.xylophone_container:hover .xylophone_base {
+  box-shadow: 3px 3px 10px rgb(255, 255, 255);
+  transition: 0.5s;
+}
+
+.xylophone_base {
+  width: 730px;
+  height: 130px;
+  background-color: rgb(94, 61, 37);
+  border-radius: 7px;
+  border-right: 3px solid rgb(71, 46, 28);
+  border-bottom: 4px solid rgb(71, 46, 28);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 3px 3px 10px black;
+  transform: skewY(10deg) skewX(-10deg) rotate(0deg);
+  transition: 2s;
+}
+
+@media only screen and (max-width: 450px){
+  .xylophone_container{
+    transform: rotate(90deg);
+  }
+
+  .xylophone_base{
+    width: 550px;
+    height: 110px;
+    transform: skewY(-3deg) skewX(3deg) rotate(0deg);
+    transition: 3.5s;
+  }
+
+  .xylophone_container:active .xylophone_base {
+  box-shadow: 3px 3px 10px rgb(255, 255, 255);
+  transition: 0s;
+}
+}
+

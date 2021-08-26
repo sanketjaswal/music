@@ -1,0 +1,104 @@
+.xylo_stick_container {
+  /* background: greenyellow; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  position: absolute;
+  top: 200px;
+}
+
+.stick1 {
+  transform: skewY(10deg) skewX(-10deg) rotate(10deg);
+  left: 140px;
+  /* z-index: 1; */
+}
+
+.stick2 {
+  transform: skewY(10deg) skewX(-10deg) rotate(-20deg);
+  left: 120px;
+}
+
+.xylo_stick_ball_container {
+  border-radius: 100%;
+  box-shadow: 3px 1px 5px black;
+}
+
+.xylo_stick_ball {
+  background: radial-gradient(
+    rgb(255, 114, 114) 0%,
+    rgb(255, 0, 0) 50% /* transparent 1 */
+  );
+  width: 40px;
+  height: 41px;
+  border-radius: 100%;
+  /* box-shadow: 2px 1px 5px black; */
+  z-index: 1;
+  box-shadow: inset -1px -2px 6px black;
+}
+
+.xylo_stick_wood_container {
+  box-shadow: 1px 1px 5px black;
+}
+
+.xylo_stick_wood {
+  width: 10px;
+  height: 350px;
+  /* background: honeydew; */
+  background: repeating-linear-gradient(
+    to right,
+    #caa472 0%,
+    #dbb98b 25%,
+    #caa472 50%
+  );
+  box-shadow: inset -2.5px -1px 3px black;
+}
+
+@media only screen and (max-width: 450px) {
+  .stick1 {
+    transform: skewY(10deg) skewX(-10deg) rotate(130deg);
+    left: 100px;
+    top: 520px;
+  }
+
+  .stick2 {
+    transform: skewY(10deg) skewX(-10deg) rotate(90deg);
+    left: 190px;
+    top: -70px;
+  }
+
+  .xylo_stick_ball_container {
+  border-radius: 100%;
+  box-shadow: 3px 1px 5px black;
+}
+
+.xylo_stick_ball {
+  background: radial-gradient(
+    rgb(255, 114, 114) 0%,
+    rgb(255, 0, 0) 50% 
+  );
+  width: 30px;
+  height: 31px;
+  border-radius: 100%;
+  z-index: 1;
+  box-shadow: inset -1px -2px 6px black;
+}
+
+.xylo_stick_wood_container {
+  box-shadow: 1px 1px 5px black;
+}
+
+.xylo_stick_wood {
+  width: 8px;
+  height: 200px;
+  /* background: honeydew; */
+  background: repeating-linear-gradient(
+    to right,
+    #caa472 0%,
+    #dbb98b 25%,
+    #caa472 50%
+  );
+  box-shadow: inset -2.5px -1px 3px black;
+}
+}

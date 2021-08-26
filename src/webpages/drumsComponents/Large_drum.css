@@ -1,0 +1,63 @@
+#Floor-Tom {
+  left: 25%;
+  top: 300px;
+}
+
+#ld_base {
+  height: 140px;
+  width: 135px;
+  padding-top: 10px;
+  position: absolute;
+}
+
+#d_hooks_cont1 {
+  top: 0px;
+  left: -6px;
+  width: 110%;
+}
+
+#d_hooks_cont2 {
+  bottom: 0px;
+  left: -6px;
+  width: 110%;
+}
+
+#ld_steel_bar {
+  width: 145px;
+}
+
+#Floor-Tom:active {
+  left: 24.7%;
+}
+
+#Floor-Tom:active .d_base {
+  width: 138px;
+  background-color: var(--drums_active_bg_color);
+  transition: 0.1s;
+  padding-top: 3px;
+  margin-top: 15px;
+}
+
+#Floor-Tom:active #ld_steel_bar {
+  
+  width: 150px;
+  transition: 0.1s;
+}
+
+#Floor-Tom:active .d_sb_1 {
+  height: 5px;
+  top: -11px;
+}
+
+#Floor-Tom:active .d_sb_2 {
+  height: 6px;
+  bottom: -12px;
+}
+
+/* stand */
+
+#Floor-Tom:active .ld_Stand_stick{
+  width: 5.5px;
+  height: 84px;
+  transition: 0.1s;
+}

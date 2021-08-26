@@ -1,0 +1,13 @@
+.logo_audioCubes_container {
+  width: 150px;
+  height: 150px;
+  margin-top:40px ;
+  position: relative;
+  display: none;
+  background-color: pink;
+}
+
+.logo_audioCubes_container:hover {
+  transition: 2s;
+  background: radial-gradient(rgb(253, 107, 107) 0%, transparent 65%);
+}

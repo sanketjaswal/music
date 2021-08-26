@@ -1,0 +1,37 @@
+:root {
+  --audioCubes_body_bg_color: rgb(202, 137, 75);
+  --audioCubes_tabs_bg_color: rgba(236, 213, 232, 0.61);
+  --audioCubes_tabs_shadow_color: rgb(59, 38, 38);
+}
+
+.audioCubes_Page_body {
+  min-width: 100%;
+  min-height: 100vh;
+  background-color: var(--audioCubes_body_bg_color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: relative; */
+}
+
+.audioCubes_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(pictures/texture-wood-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  border-bottom: 6px solid var(--audioCubes_tabs_shadow_color);
+  border-left: 6px solid var(--audioCubes_tabs_shadow_color);
+  transform: skewY(-15deg) skewX(15deg) rotate(10deg);
+}
+
+.audioCubes {
+  display: flex;
+  justify-content: center;
+  width: 800px;
+  /* background-color: rgb(133, 107, 158); */
+  flex-wrap: wrap;
+  /* transform: skewY(-15deg) skewX(15deg) rotate(10deg); */
+}

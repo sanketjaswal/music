@@ -1,0 +1,117 @@
+.disk_texture {
+  background: repeating-radial-gradient(
+    black 1%,
+    rgb(65, 65, 65) 1.5%,
+    black 2%
+  );
+  width: 750px;
+  height: 750px;
+  position: absolute;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -4px 3px 4px rgba(0, 0, 0, 0.692);
+}
+
+.center_disk {
+  background-color: var(--body_color);
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.d1 {
+  top: -500px;
+  left: 800px;
+}
+
+.d2 {
+  top: -520px;
+  left: 930px;
+}
+
+.d3 {
+  top: -200px;
+  left: 1050px;
+}
+
+.d4 {
+  top: 600px;
+  left: 700px;
+}
+
+.disk_text {
+  color: rgb(0, 0, 0);
+  transform: rotate(10deg);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.disk_text h5:hover{
+  color: white
+}
+
+.disk_text h5:active{
+  color: gold
+}
+
+.link_container{
+  display: flex;
+}
+
+.disk_text a {
+  border-radius: 100%;
+  margin: 4px;
+  border: 1.5px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.disk_text a :hover {
+  background-color: rgb(255, 255, 255);
+  border-radius: 100%;
+}
+
+.disk_text a :active {
+  background-color: gold;
+  border-radius: 100%;
+}
+
+.icon {
+  height: 30px;
+  width: 30px;
+  display: block;
+  /* color: rgb(65, 65, 65); */
+}
+
+.github {
+  background: url("./icons/icons8-github-30.png");
+}
+
+.linkenIn {
+  background: url("./icons/icons8-linkedin-circled-30.png");
+}
+
+.codepen {
+  height: 32px;
+  width: 32px;
+  background: url("./icons/icons8-codepen-32.png");
+}
+
+.twitter {
+  background: url("./icons/icons8-twitter-circled-30.png");
+}
+
+.instagram {
+  background: url("./icons/icons8-instagram-circle-30.png");
+}

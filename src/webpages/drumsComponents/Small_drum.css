@@ -1,0 +1,47 @@
+#Snare {
+  right: 27.5%;
+  top: 260px;
+}
+
+#sd_base {
+  height: 35px;
+  position: absolute;
+}
+
+#sd_steel_bar {
+  width: 130px;
+}
+
+#d_hooks_cont_mid {
+  position: relative;
+  align-self: center;
+  height: 100%;
+  width: 111%;
+}
+
+#Snare:active {
+  right: 27.3%;
+}
+
+#Snare:active .d_base {
+  height: 27px;
+  width: 128px;
+  background-color: var(--drums_active_bg_color);
+  transition: 0.1s;
+  padding-top: 0px;
+  margin-top: 8px;
+}
+
+#Snare:active #sd_steel_bar {
+  height: 6px;
+  width: 137px;
+  transition: 0.1s;
+}
+
+#Snare:active .d_sb_1 {
+  top: -12px;
+}
+
+#Snare:active .d_sb_2 {
+  bottom: -12px;
+}

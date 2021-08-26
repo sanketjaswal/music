@@ -1,0 +1,92 @@
+:root {
+  --logo_shadow: rgba(255, 255, 255, 0.925);
+  --logo_color: rgb(255, 107, 8);
+}
+
+.music_logo_container {
+  /* background: rgb(197, 31, 31); */
+  width: 100px;
+  display: flex;
+  padding: 40px 80px;
+  justify-content: center;
+  /* transition: 2s; */
+}
+.music_logo_container:hover {
+  --logo_color: gold;
+  transition: 2s;
+  background: radial-gradient(rgb(253, 107, 107) 0%, transparent 35%);
+}
+
+.music_logo_container:active{
+    --logo_color: white;
+}
+
+.music_logo_base {
+  width: auto;
+  transform: skewY(-10deg) skewX(-27deg) rotate(2deg);
+  display: block;
+  position: relative;
+  top: 20px;
+  left: -10px;
+}
+.top_bar {
+  background-color: var(--logo_color);
+  width: 85px;
+  height: 22px;
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+  /* border-bottom: 2px solid var(--logo_shadow);
+    border-right: 3px solid var(--logo_shadow); */
+  box-shadow: 5px 3px var(--logo_shadow);
+}
+
+.logo_bottom {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: -1px;
+}
+
+.bars_handler {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.bh2 {
+  padding-left: 23px;
+}
+
+.v_bar1 {
+  background-color: var(--logo_color);
+  width: 22px;
+  height: 60px;
+  /* border-right: 3px solid var(--logo_shadow); */
+  box-shadow: 5px 0px 0px var(--logo_shadow);
+  z-index: 1;
+}
+
+.v_bar2 {
+  background-color: var(--logo_color);
+  width: 22px;
+  height: 110px;
+  /* border-right: 3px solid var(--logo_shadow); */
+  box-shadow: 5px 0px var(--logo_shadow);
+}
+
+.circle {
+  background-color: var(--logo_color);
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: flex;
+  position: relative;
+  top: -20px;
+  /* border-bottom: 2px solid var(--logo_shadow);
+    border-right: 3px solid var(--logo_shadow); */
+  box-shadow: 5px 3px var(--logo_shadow);
+}
+
+.c1 {
+  left: -18px;
+}

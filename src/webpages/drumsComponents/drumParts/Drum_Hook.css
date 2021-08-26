@@ -1,0 +1,25 @@
+.dh_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.dh_ball {
+  width: 6px;
+  height: 16px;
+  border: 2px solid var(--drums_border_color);
+  border-radius: 15px;
+  background-color: var(--drums_steel_bg_color);
+  box-shadow: 0px 3px rgba(29, 29, 29, 0.171);
+  transition: 0.4s;
+}
+
+.dh_hook {
+  height: 1px;
+  border: 1px solid var(--drums_border_color);
+}
+
+.dh_hook_mid {
+  height: 6px;
+}

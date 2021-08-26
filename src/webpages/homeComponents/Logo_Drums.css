@@ -1,0 +1,150 @@
+.logo_drums_container {
+  width: 150px;
+  height: 150px;
+  margin-top:40px ;
+  position: relative;
+  display: none;
+}
+
+.logo_drums_container:hover {
+  transition: 2s;
+  background: radial-gradient(rgb(253, 107, 107) 0%, transparent 65%);
+}
+
+.logo_drum_1 {
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
+  background-color: skyblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--drums_border_color);
+  transform: rotate(-35deg);
+}
+
+.logo_drum_1_base {
+  width: 125px;
+  height: 125px;
+  border-radius: 100%;
+  border: 1px solid var(--drums_border_color);
+  background-color: whitesmoke;
+  color: black;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset -3px 0px 1px rgba(68, 68, 68, 0.534);
+}
+
+.logo_drum_1_hook {
+  width: 8px;
+  height: 10px;
+  background-color: whitesmoke;
+  border: 1px solid var(--drums_border_color);
+  position: absolute;
+}
+
+#logo_d1h_1 {
+  top: -3px;
+  right: 25px;
+  transform: rotate(28deg);
+}
+
+#logo_d1h_2 {
+  top: -3px;
+  left: 25px;
+  transform: rotate(-28deg);
+}
+
+#logo_d1h_3 {
+  top: 56px;
+  left: -11px;
+  transform: rotate(-90deg);
+}
+
+#logo_d1h_4 {
+  top: 56px;
+  right: -11px;
+  transform: rotate(90deg);
+}
+
+#logo_d1h_5 {
+  bottom: -3px;
+  right: 25px;
+  transform: rotate(-28deg);
+}
+
+#logo_d1h_6 {
+  bottom: -3px;
+  left: 25px;
+  transform: rotate(28deg);
+}
+
+.logo_drum_1_base h5 {
+  color: var(--drums_border_color);
+  transition: 0.4s;
+  font-family: cursive;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* drum 2 */
+
+.logo_drum_2 {
+  width: 100px;
+  height: 40px;
+  background-color: skyblue;
+  position: absolute;
+  bottom: 11px;
+  left: -10px;
+  border-inline: 1px solid var(--drums_border_color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo_drum_2_face {
+  width: 106px;
+  height: 4px;
+  background-color: whitesmoke;
+  position: absolute;
+  border: 1px solid var(--drums_border_color);
+}
+
+#logo_d2_1 {
+  top: -5px;
+  right: -4px;
+}
+
+#logo_d2_2 {
+  bottom: -5px;
+  right: -4px;
+}
+
+.logo_drum_2_hook_container {
+  width: 106%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo_drum_2_hook {
+  width: 5px;
+  height: 8px;
+  background-color: whitesmoke;
+  border-radius: 3px;
+  border: 1px solid var(--drums_border_color);
+}
+
+.logo_drums_container:hover .logo_drum_1 {
+    background-color: gold;
+}
+
+.logo_drums_container:hover .logo_drum_2 {
+    background-color: gold;
+}
+
+.logo_drums_container:active .logo_drum_1_base h5{
+    color: gold
+} 

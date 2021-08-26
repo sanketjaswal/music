@@ -1,0 +1,57 @@
+.V_stand_container {
+  /* width: 15px; */
+  position: absolute;
+  bottom: -10px;
+  display: flex;
+  justify-content: center;
+}
+
+.V_stand_elbow {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: var(--drums_steel_bg_color);
+  border: 2px solid var(--drums_border_color);
+  z-index: 1;
+  position: absolute;
+  top:-15px
+}
+
+.V_stand_lower {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+}
+
+.V_Stand_stick {
+  width: 5.5px;
+  height: 60px;
+  border-inline: 2px solid var(--drums_border_color);
+  background-color: var(--drums_steel_bg_color);
+  transition: 0.4s;
+}
+
+.V_Stand_ball {
+  width: 11px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid var(--drums_border_color);
+  background-color: var(--drums_stand_ball_bg_color);
+  position: absolute;
+  bottom: -5px;
+  transition: 0.4s;
+}
+
+#v_stand_left_bar{
+    transform: rotate(50deg);
+    top: -15px;
+    left: -25px;
+}
+
+#v_stand_right_bar{
+    transform: rotate(-50deg);
+    top: -15px;
+    right: -25px;
+
+}

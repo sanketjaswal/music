@@ -1,0 +1,101 @@
+.logo_xylo_container {
+  width: 150px;
+  height: 150px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo_xylo_container:hover {
+  transition: 2s;
+  background: radial-gradient(rgb(253, 107, 107) 0%, transparent 65%);
+}
+
+.logo_xylo_bars_holder {
+  width: 100%;
+  height: 25px;
+  background-color: #462815;
+  transform: skewY(10deg) skewX(-27deg) rotate(2deg);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-right: 2px solid #301e12;
+  border-bottom: 2px solid #301e12;
+  box-shadow: 3px 3px 6px black;
+}
+
+.logo_xylo_bars {
+  width: 13px;
+  border-radius: 2px;
+  border-right: 1px solid rgba(49, 49, 49, 0.856);
+  border-bottom: 1px solid rgba(49, 49, 49, 0.808);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 3px 3px 6px black;
+}
+
+.logo_xylo_1:hover {
+  background-color: rgb(255, 0, 43);
+}
+
+.logo_xylo_1 {
+  height: 90px;
+  background-color: rgb(252, 61, 92);
+}
+
+.logo_xylo_2:hover {
+  background-color: rgb(52, 36, 143);
+}
+
+.logo_xylo_2 {
+  height: 80px;
+  background-color: rgb(76, 65, 139);
+}
+
+.logo_xylo_3 {
+  height: 70px;
+  background-color: rgb(66, 127, 155);
+}
+
+.logo_xylo_3:hover {
+  background-color: rgb(8, 113, 161);
+}
+
+.logo_xylo_4 {
+  height: 60px;
+  background-color: rgb(211, 201, 69);
+}
+
+.logo_xylo_4:hover {
+  background-color: rgb(207, 194, 7);
+}
+
+.logo_xylo_5 {
+  height: 50px;
+  background-color: rgb(98, 255, 221);
+}
+
+.logo_xylo_5:hover {
+  background-color: rgb(0, 255, 200);
+}
+
+.logo_xylo_6 {
+  height: 40px;
+  background-color: rgb(115, 212, 85);
+}
+
+.logo_xylo_6:hover {
+  background-color: rgb(81, 216, 40);
+}
+
+.logo_xylo_Screws {
+  width: 2px;
+  height: 2px;
+  margin: 4px;
+  border-radius: 100%;
+  background-color: cornflowerblue;
+  border-right: 1px solid rgb(69, 108, 180);
+  border-bottom: 1px solid rgb(74, 116, 192);
+}

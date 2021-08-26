@@ -1,0 +1,61 @@
+.cd_stand_conatiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  transition: 0.4s;
+}
+
+.cd_Stand_holder {
+  width: 10px;
+  height: 50px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border: 2px solid var(--drums_border_color);
+  background-color: var(--drums_steel_bg_color);
+  transition: 0.4s;
+}
+
+.cd_stand_lower {
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: flex-end; */
+  /* height: 150px; */
+  position: relative;
+  /* transform: rotate(15deg); */
+}
+
+.cd_Stand_stick {
+  width: 6px;
+  height: 100px;
+  border-inline: 2px solid var(--drums_border_color);
+  background-color: var(--drums_steel_bg_color);
+  /* position: absolute; */
+  transition: 0.4s;
+}
+
+.cd_Stand_ball {
+  width: 11px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid var(--drums_border_color);
+  background-color: var(--drums_stand_ball_bg_color);
+  /* z-index: 1; */
+  position: absolute;
+  bottom: -5px;
+  transition: 0.4s;
+}
+
+#cd_stand_right {
+  right: -116px;
+  top: -12px;
+  transform: rotate(-4deg);
+}
+
+#cd_stand_left {
+  left: -116px;
+  top: -12px;
+  transform: rotate(4deg);
+}

@@ -1,0 +1,27 @@
+import React from "react";
+import { LogoMusic } from "./Logo_music";
+import { LogoXylophone } from "./Logo_xylophone";
+import { LogoPiano } from "./Logo_piano";
+import { LogoDrums } from "./Logo_Drums";
+import { LogoAudioCubes } from "./Logo_audioCubes";
+import "./Ring.css";
+
+export const Ring = ({ click }) => {
+  return (
+    <div className="outer_circle ">
+      <div className="inner_circle">
+        <div className="disk_top">
+          <h1 className="Music_text">Taal</h1>
+          <div className="disk_center"></div>
+        </div>
+        <div className="logos_container">
+          <LogoPiano click={click} />
+          <LogoXylophone click={click} />
+          <LogoMusic click={click} />
+          <LogoDrums click={click} />
+          <LogoAudioCubes click={click} />
+        </div>
+      </div>
+    </div>
+  );
+};

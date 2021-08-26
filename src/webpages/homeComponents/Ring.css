@@ -1,0 +1,83 @@
+.outer_circle {
+  background: repeating-radial-gradient(
+    black 1%,
+    rgb(65, 65, 65) 1.5%,
+    black 2%
+  );
+  width: 800px;
+  height: 800px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.733);
+  position: absolute;
+  left: -190px;
+  top: -190px;
+  border-radius: 100%;
+  border: 5px solid rgb(34, 34, 34);
+}
+
+.outer_circle:hover{
+    border: 5px solid rgb(85, 85, 85);
+    transition: .7s;
+
+}
+
+.outer_circle:hover .inner_circle {
+  padding: 100px;
+  transition: 0.8s;
+  
+  /* width: 100px;
+  height: 100px;  */
+}
+
+.inner_circle {
+  background-color: var(--body_color);
+  width: 400px;
+  height: 400px;
+  padding: 150px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  /* opacity: 0/; */
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.616);
+  transition: padding 0.4s;
+}
+
+.disk_top {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start; */
+  align-items: center;
+}
+
+.Music_text {
+  color: gold;
+  font-size: 80px;
+  /* text-shadow: 3px 3px rgba(255, 217, 0, 0.418); */
+  text-shadow: 3px 3px rgba(255, 255, 255, 0.925);
+}
+
+.disk_center {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border-radius: 100%;
+  box-shadow: 3px 3px 6px black;
+  box-shadow: inset -3px -4px 6px black;
+}
+
+.logos_container{
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* background-color: gainsboro; */
+}
+
+.btnholder {
+  float: right;
+}

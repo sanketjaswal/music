@@ -1,0 +1,14 @@
+:root {
+  --body_color: rgb(197, 31, 31);
+}
+
+html, body {
+  min-height: 100%;
+  overflow-x: hidden;
+    /* overflow-y: hidden; */
+}
+
+body {
+  background-color: var(--body_color);
+}
+

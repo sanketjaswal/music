@@ -6,7 +6,7 @@ import { LogoDrums } from "./Logo_Drums";
 import { LogoAudioCubes } from "./Logo_audioCubes";
 import "./Ring.css";
 
-export const Ring = ({ click }) => {
+export const Ring = ({ click, pageChanger }) => {
   return (
     <div className="outer_circle ">
       <div className="inner_circle">
@@ -15,11 +15,11 @@ export const Ring = ({ click }) => {
           <div className="disk_center"></div>
         </div>
         <div className="logos_container">
-          <LogoPiano click={click} />
-          <LogoXylophone click={click} />
-          <LogoMusic click={click} />
-          <LogoDrums click={click} />
-          <LogoAudioCubes click={click} />
+          <LogoPiano click={click} pageChanger={pageChanger} />
+          <LogoXylophone click={click} pageChanger={pageChanger} />
+          <LogoMusic click={click} pageChanger={pageChanger} />
+          <LogoDrums click={click} pageChanger={pageChanger} />
+          <LogoAudioCubes click={click} pageChanger={pageChanger} />
         </div>
       </div>
     </div>

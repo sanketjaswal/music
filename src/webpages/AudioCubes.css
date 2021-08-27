@@ -3,7 +3,7 @@
   --audioCubes_tabs_bg_color: rgba(236, 213, 232, 0.61);
   --audioCubes_tabs_shadow_color: rgb(59, 38, 38);
 }
-
+ 
 .audioCubes_Page_body {
   min-width: 100%;
   min-height: 100vh;
@@ -11,7 +11,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* position: relative; */
+  position: relative;
 }
 
 .audioCubes_container {

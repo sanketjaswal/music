@@ -1,3 +1,4 @@
+import { useHistory } from "react-router";
 import { Ring } from "./homeComponents/Ring";
 import { NavTabs } from "./homeComponents/Nav_tabs";
 import { PlayStick } from "./homeComponents/Play_stick";
@@ -5,6 +6,26 @@ import { Surrounding } from "./homeComponents/Surrounding";
 import "./home.css";
 
 export const Home = () => {
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     console.log("This will run after 1 second!");
+  //   }, 3000);
+  //   return () => clearTimeout(timer);
+  // });
+
+  const history = useHistory();
+
+  const pageChanger = (page) => {
+    setTimeout(() => {
+      handleClick(page);
+    }, 3000);
+  };
+
+  const handleClick = (page) => {
+    console.log("mangekyo");
+    history.push(`/${page}`);
+  };
+
   const navs = ["Piano", "XyloPhone", "Music", "Drums", "AudioCubes"];
   let activeIndex = 2;
   let activeNav = navs[activeIndex];
@@ -98,7 +119,7 @@ export const Home = () => {
   return (
     <div className="home">
       <NavTabs navs={navs} navRotator={navRotator} />
-      <Ring click={logoClick_stickRotator} />
+      <Ring click={logoClick_stickRotator} pageChanger={pageChanger} />
       <Surrounding />
       <PlayStick />
     </div>

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useHistory } from "react-router";
 import { Ring } from "./homeComponents/Ring";
 import { NavTabs } from "./homeComponents/Nav_tabs";
@@ -6,24 +7,20 @@ import { Surrounding } from "./homeComponents/Surrounding";
 import "./home.css";
 
 export const Home = () => {
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     console.log("This will run after 1 second!");
-  //   }, 3000);
-  //   return () => clearTimeout(timer);
-  // });
-
   const history = useHistory();
+
+  const BackHome = (page) => {};
 
   const pageChanger = (page) => {
     setTimeout(() => {
       handleClick(page);
-    }, 3000);
+    }, 2500);
   };
 
   const handleClick = (page) => {
     console.log("mangekyo");
     history.push(`/${page}`);
+    BackHome(page);
   };
 
   const navs = ["Piano", "XyloPhone", "Music", "Drums", "AudioCubes"];

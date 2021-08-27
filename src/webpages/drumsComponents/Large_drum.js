@@ -9,7 +9,7 @@ export const LargeDrum = ({ click }) => {
     <div className="d_container" id="Floor-Tom" onClick={(e) => click(e)}>
       <audio
         controls
-        class="drum_audio"
+        className="drum_audio"
         src={`https://s3.amazonaws.com/iamjoshellis-codepen/pens-of-rock/drums/Floor-Tom.mp3`}
       ></audio>
 

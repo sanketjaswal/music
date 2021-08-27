@@ -8,7 +8,7 @@ export const CircleDrum = ({ click }) => {
     <div className="d_container" id="Kick" onClick={(e) => click(e)}>
       <audio
         controls
-        class="drum_audio"
+        className="drum_audio"
         src={`https://s3.amazonaws.com/iamjoshellis-codepen/pens-of-rock/drums/Kick.mp3`}
       ></audio>
       <div className="md_stand_bottom_bar_holder"></div>

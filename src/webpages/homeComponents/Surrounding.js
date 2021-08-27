@@ -15,7 +15,7 @@ export const Surrounding = () => {
       </div>
       <div className="disk_texture d4">
         <div className="center_disk">
-          <div div className="disk_text">
+          <div className="disk_text">
             <h3> Sanket Jaswal</h3>
             <div className="link_container">
               <a href="https://github.com/sanketjaswal">

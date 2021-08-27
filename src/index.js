@@ -14,7 +14,7 @@ const Music = (
   <Router>
     <div>
       <Route path="/" component={App} />
-      <Route path="/piano" component={Piano} />
+      <Route path="/Piano" component={Piano} />
       <Route path="/Xylophone" component={Xylophone} />
       <Route path="/Drums" component={Drums} />
       <Route path="/AudioCubes" component={AudioCubes} />

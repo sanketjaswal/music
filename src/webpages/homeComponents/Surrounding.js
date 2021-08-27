@@ -7,12 +7,7 @@ export const Surrounding = () => {
       <div className="disk_texture d1">
         <div className="center_disk"></div>
       </div>
-      <div className="disk_texture d3">
-        <div className="center_disk"></div>
-      </div>
-      <div className="disk_texture d2">
-        <div className="center_disk"></div>
-      </div>
+
       <div className="disk_texture d4">
         <div className="center_disk">
           <div className="disk_text">
@@ -27,7 +22,7 @@ export const Surrounding = () => {
               <a href="https://codepen.io/sanketjaswal">
                 <span className="codepen icon"></span>
               </a>
-              <a href="">
+              <a href="https://twitter.com">
                 <span className="twitter icon"></span>
               </a>
               <a href="https://www.instagram.com/accounts/login/">
@@ -36,6 +31,12 @@ export const Surrounding = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="disk_texture d3">
+        <div className="center_disk"></div>
+      </div>
+      <div className="disk_texture d2">
+        <div className="center_disk"></div>
       </div>
     </>
   );

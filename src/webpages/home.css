@@ -5,7 +5,7 @@
 html, body {
   min-height: 100%;
   overflow-x: hidden;
-    /* overflow-y: hidden; */
+    overflow-y: hidden;
 }
 
 body {

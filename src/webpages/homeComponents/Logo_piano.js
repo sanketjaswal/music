@@ -6,7 +6,7 @@ export const LogoPiano = ({ click, pageChanger }) => {
     <div
       className="logo_piano_container"
       onClick={() => {
-        pageChanger("piano");
+        pageChanger("Piano");
         click();
       }}
     >

@@ -40,13 +40,25 @@
 }
 
 .d4 {
-  top: 600px;
-  left: 700px;
+  top: 520px;
+  left: 600px;
+  transition: 1.5s;
+}
+
+.d4:hover {
+  top: 200px;
+  left: 800px;
+  transition: 2s;
+}
+
+.d4:hover .disk_text {
+  transform: rotate(10deg);
+  transition: 2.5s;
 }
 
 .disk_text {
   color: rgb(0, 0, 0);
-  transform: rotate(10deg);
+  transform: rotate(180deg);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   display: flex;
@@ -54,17 +66,18 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: 3s;
 }
 
-.disk_text h5:hover{
-  color: white
+.disk_text h3:hover {
+  color: white;
 }
 
-.disk_text h5:active{
-  color: gold
+.disk_text h3:active {
+  color: gold;
 }
 
-.link_container{
+.link_container {
   display: flex;
 }
 

@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import { useHistory } from "react-router";
 import { Ring } from "./homeComponents/Ring";
 import { NavTabs } from "./homeComponents/Nav_tabs";
@@ -9,8 +9,6 @@ import "./home.css";
 export const Home = () => {
   const history = useHistory();
 
-  const BackHome = (page) => {};
-
   const pageChanger = (page) => {
     setTimeout(() => {
       handleClick(page);
@@ -20,10 +18,19 @@ export const Home = () => {
   const handleClick = (page) => {
     console.log("mangekyo");
     history.push(`/${page}`);
-    BackHome(page);
+    // BackHome(page);
   };
 
-  const navs = ["Piano", "XyloPhone", "Music", "Drums", "AudioCubes"];
+  // const BackHome = (page) => {
+  //   console.log(page);
+  //   console.log(navs.includes(page));
+
+  //   if (navs.includes(page)) {
+  //     document.body.style.overflow = "hidden";
+  //   }
+  // };
+
+  const navs = ["Piano", "Xylophone", "Music", "Drums", "AudioCubes"];
   let activeIndex = 2;
   let activeNav = navs[activeIndex];
 
@@ -82,7 +89,7 @@ export const Home = () => {
         "flex";
       document.getElementsByClassName("logo_xylo_container")[0].style.display =
         "none";
-    } else if (activeNav === "XyloPhone") {
+    } else if (activeNav === "Xylophone") {
       document.getElementsByClassName("logo_piano_container")[0].style.display =
         "none";
       document.getElementsByClassName("logo_xylo_container")[0].style.display =

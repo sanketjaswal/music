@@ -1,7 +1,7 @@
 .logo_Drums_container {
   width: 150px;
   height: 150px;
-  margin-top:40px ;
+  margin-top: 40px;
   position: relative;
   display: none;
 }
@@ -21,6 +21,7 @@
   align-items: center;
   border: 1px solid var(--drums_border_color);
   transform: rotate(-35deg);
+  transition: 1s;
 }
 
 .logo_drum_1_base {
@@ -103,6 +104,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  transition: 1s;
 }
 
 .logo_drum_2_face {
@@ -137,14 +139,23 @@
   border: 1px solid var(--drums_border_color);
 }
 
-.logo_Drums_container:hover .logo_drum_1 {
-    background-color: gold;
-}
-
+.logo_Drums_container:hover .logo_drum_1,
 .logo_Drums_container:hover .logo_drum_2 {
-    background-color: gold;
+  background-color: rgb(239, 80, 253);
+  transition: 0.5s;
 }
 
-.logo_Drums_container:active .logo_drum_1_base h5{
-    color: Green
-} 
+/* .logo_Drums_container:hover .logo_drum_2 {
+    background-color: gold;
+    transition: 1s;
+} */
+
+.logo_Drums_container:active .logo_drum_1,
+.logo_Drums_container:active .logo_drum_2 {
+  background-color: gold;
+  transition: 0s;
+}
+
+.logo_Drums_container:active .logo_drum_1_base h5 {
+  color: Green;
+}

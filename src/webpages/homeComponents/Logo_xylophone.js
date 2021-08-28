@@ -4,7 +4,7 @@ import "./Logo_xylophone.css";
 export const LogoXylophone = ({ click, pageChanger }) => {
   return (
     <div
-      className="logo_xylo_container"
+      className="logo_Xylophone_container"
       onClick={() => {
         pageChanger("Xylophone");
         click();

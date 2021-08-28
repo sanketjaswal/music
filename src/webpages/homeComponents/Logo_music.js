@@ -4,9 +4,9 @@ import "./Logo_music.css";
 export const LogoMusic = ({ click, pageChanger }) => {
   return (
     <div
-      className="music_logo_container"
+      className="logo_Music_container"
       onClick={() => {
-        pageChanger("/");
+        pageChanger("");
         click();
       }}
     >

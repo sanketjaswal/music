@@ -1,4 +1,4 @@
-.logo_drums_container {
+.logo_Drums_container {
   width: 150px;
   height: 150px;
   margin-top:40px ;
@@ -6,7 +6,7 @@
   display: none;
 }
 
-.logo_drums_container:hover {
+.logo_Drums_container:hover {
   transition: 2s;
   background: radial-gradient(rgb(253, 107, 107) 0%, transparent 65%);
 }
@@ -137,14 +137,14 @@
   border: 1px solid var(--drums_border_color);
 }
 
-.logo_drums_container:hover .logo_drum_1 {
+.logo_Drums_container:hover .logo_drum_1 {
     background-color: gold;
 }
 
-.logo_drums_container:hover .logo_drum_2 {
+.logo_Drums_container:hover .logo_drum_2 {
     background-color: gold;
 }
 
-.logo_drums_container:active .logo_drum_1_base h5{
-    color: gold
+.logo_Drums_container:active .logo_drum_1_base h5{
+    color: Green
 } 

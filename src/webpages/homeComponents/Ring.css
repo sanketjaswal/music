@@ -75,9 +75,19 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  /* background-color: gainsboro; */
 }
 
 .btnholder {
   float: right;
+}
+
+
+/* after logo click */
+
+#inner_circle_shrink{
+  padding: 45px;
+}
+
+#outer_circle_border{
+  border: 5px solid rgb(175, 175, 175);
 }

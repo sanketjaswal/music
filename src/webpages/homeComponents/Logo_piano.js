@@ -4,7 +4,7 @@ import "./Logo_piano.css";
 export const LogoPiano = ({ click, pageChanger }) => {
   return (
     <div
-      className="logo_piano_container"
+      className="logo_Piano_container"
       onClick={() => {
         pageChanger("Piano");
         click();

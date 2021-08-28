@@ -66,6 +66,8 @@
   transition: ease-in-out 2s;
 }
 
+
+
 .second_black_part {
   width: 30px;
   height: 50px;
@@ -105,4 +107,14 @@
     #dbb98b 25%,
     #caa472 50%
   );
+}
+
+/* after click on logo */
+
+#small_rotation_on{
+  transform: rotate(-30deg);
+}
+
+#base_rotation_on{
+  transform: rotate(160deg);
 }

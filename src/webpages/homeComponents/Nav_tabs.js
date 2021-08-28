@@ -7,19 +7,19 @@ export const NavTabs = ({ navs, navRotator }) => {
       <nav className="tabs_holding_circle">
         <ul>
           <li>
-            <a href="#products">{navs[0]}</a>
+            <a>{navs[0]}</a>
           </li>
           <li>
-            <a href="#services">{navs[1]}</a>
+            <a>{navs[1]}</a>
           </li>
           <li>
-            <a href="#careers">{navs[2]}</a>
+            <a>{navs[2]}</a>
           </li>
           <li>
-            <a href="#about">{navs[3]}</a>
+            <a>{navs[3]}</a>
           </li>
           <li>
-            <a href="#contact">{navs[4]}</a>
+            <a>{navs[4]}</a>
           </li>
         </ul>
       </nav>

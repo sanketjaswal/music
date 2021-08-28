@@ -1,4 +1,4 @@
-.logo_piano_container {
+.logo_Piano_container {
   width: 180px;
   height: 180px;
   display: none;
@@ -6,7 +6,7 @@
   align-items: center;
 }
 
-.logo_piano_container:hover {
+.logo_Piano_container:hover {
   background: radial-gradient(rgb(253, 107, 107) 0%, transparent 65%);
 }
 

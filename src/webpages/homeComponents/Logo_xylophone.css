@@ -1,4 +1,4 @@
-.logo_xylo_container {
+.logo_Xylophone_container {
   width: 150px;
   height: 150px;
   display: none;
@@ -6,7 +6,7 @@
   justify-content: center;
 }
 
-.logo_xylo_container:hover {
+.logo_Xylophone_container:hover {
   transition: 2s;
   background: radial-gradient(rgb(253, 107, 107) 0%, transparent 65%);
 }

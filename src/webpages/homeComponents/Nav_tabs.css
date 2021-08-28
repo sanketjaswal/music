@@ -1,6 +1,5 @@
 
 .tabs_holding_circle {
-  /* background: repeating-linear-gradient(#9c9c9c 0%, #ffffff 8%,#9c9c9c 16% ); */
   width: 850px;
   height: 850px;
   position: absolute;
@@ -12,12 +11,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.753);
-  border-bottom: 2px solid rgb(105, 105, 105); */
 }
 
 .tabs_holding_circle li {
-  /* background-color: rgb(8, 8, 3); */
   width: 10%;
   text-align: center;
 }

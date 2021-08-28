@@ -4,7 +4,7 @@ import "./Logo_Drums.css";
 export const LogoDrums = ({ click, pageChanger }) => {
   return (
     <div
-      className="logo_drums_container"
+      className="logo_Drums_container"
       onClick={() => {
         pageChanger("Drums");
         click();

@@ -1,4 +1,3 @@
-// import { useEffect } from "react";
 import { useHistory } from "react-router";
 import { Ring } from "./homeComponents/Ring";
 import { NavTabs } from "./homeComponents/Nav_tabs";
@@ -11,24 +10,14 @@ export const Home = () => {
 
   const pageChanger = (page) => {
     setTimeout(() => {
-      handleClick(page);
+      pageHandler(page);
+      logoClick_stickRotator_back();
     }, 2500);
   };
 
-  const handleClick = (page) => {
-    console.log("mangekyo");
+  const pageHandler = (page) => {
     history.push(`/${page}`);
-    // BackHome(page);
   };
-
-  // const BackHome = (page) => {
-  //   console.log(page);
-  //   console.log(navs.includes(page));
-
-  //   if (navs.includes(page)) {
-  //     document.body.style.overflow = "hidden";
-  //   }
-  // };
 
   const navs = ["Piano", "Xylophone", "Music", "Drums", "AudioCubes"];
   let activeIndex = 2;
@@ -51,7 +40,8 @@ export const Home = () => {
       activeIndex += 1;
       activeNav = navs[activeIndex];
     }
-    logoChanger(activeNav);
+    console.log(activeNav);
+    logo_change(activeNav);
     navRotatorDisappearer(evt);
   };
 
@@ -73,50 +63,47 @@ export const Home = () => {
   };
 
   const logoClick_stickRotator = () => {
-    document.getElementsByClassName("base_rotator")[0].style.transform =
-      "rotate(160deg)";
-    document.getElementsByClassName("small_rotator")[0].style.transform =
-      "rotate(-30deg)";
-    document.getElementsByClassName("inner_circle")[0].style.padding = "45px";
-    document.getElementsByClassName("outer_circle")[0].style.border =
-      "5px solid rgb(175, 175, 175)";
-    document.getElementsByClassName("inner_circle")[0].style.padding = "45px";
+    document
+      .getElementsByClassName("base_rotator")[0]
+      .setAttribute("id", "base_rotation_on");
+    document
+      .getElementsByClassName("small_rotator")[0]
+      .setAttribute("id", "small_rotation_on");
+    document
+      .getElementsByClassName("inner_circle")[0]
+      .setAttribute("id", "inner_circle_shrink");
+    document
+      .getElementsByClassName("outer_circle")[0]
+      .setAttribute("id", "outer_circle_border");
   };
 
-  const logoChanger = (activeNav) => {
-    if (activeNav === "Piano") {
-      document.getElementsByClassName("logo_piano_container")[0].style.display =
-        "flex";
-      document.getElementsByClassName("logo_xylo_container")[0].style.display =
-        "none";
-    } else if (activeNav === "Xylophone") {
-      document.getElementsByClassName("logo_piano_container")[0].style.display =
-        "none";
-      document.getElementsByClassName("logo_xylo_container")[0].style.display =
-        "flex";
-      document.getElementsByClassName("music_logo_container")[0].style.display =
-        "none";
-    } else if (activeNav === "Music") {
-      document.getElementsByClassName("logo_xylo_container")[0].style.display =
-        "none";
-      document.getElementsByClassName("music_logo_container")[0].style.display =
-        "block";
-      document.getElementsByClassName("logo_drums_container")[0].style.display =
-        "none";
-    } else if (activeNav === "Drums") {
-      document.getElementsByClassName("music_logo_container")[0].style.display =
-        "none";
-      document.getElementsByClassName("logo_drums_container")[0].style.display =
-        "block";
-      document.getElementsByClassName(
-        "logo_audioCubes_container"
-      )[0].style.display = "none";
-    } else if (activeNav === "AudioCubes") {
-      document.getElementsByClassName("logo_drums_container")[0].style.display =
-        "none";
-      document.getElementsByClassName(
-        "logo_audioCubes_container"
-      )[0].style.display = "block";
+  const logoClick_stickRotator_back = () => {
+    document
+      .getElementsByClassName("base_rotator")[0]
+      .removeAttribute("id", "base_rotation_on");
+    document
+      .getElementsByClassName("small_rotator")[0]
+      .removeAttribute("id", "small_rotation_on");
+    document
+      .getElementsByClassName("inner_circle")[0]
+      .removeAttribute("id", "inner_circle_shrink");
+    document
+      .getElementsByClassName("outer_circle")[0]
+      .removeAttribute("id", "outer_circle_border");
+  };
+
+  const logo_change = (activeNav) => {
+    console.log(navs.indexOf(activeNav));
+    for (var i = 0; i < navs.length; i++) {
+      if (i !== navs.indexOf(activeNav)) {
+        document.getElementsByClassName(
+          `logo_${navs[i]}_container`
+        )[0].style.display = "none";
+      } else if (i === navs.indexOf(activeNav)) {
+        document.getElementsByClassName(
+          `logo_${activeNav}_container`
+        )[0].style.display = "flex";
+      }
     }
   };
 

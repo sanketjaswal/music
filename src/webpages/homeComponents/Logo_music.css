@@ -3,7 +3,7 @@
   --logo_color: rgb(255, 107, 8);
 }
 
-.music_logo_container {
+.logo_Music_container {
   /* background: rgb(197, 31, 31); */
   width: 100px;
   display: flex;
@@ -11,13 +11,13 @@
   justify-content: center;
   /* transition: 2s; */
 }
-.music_logo_container:hover {
+.logo_Music_container:hover {
   --logo_color: gold;
   transition: 2s;
   background: radial-gradient(rgb(253, 107, 107) 0%, transparent 35%);
 }
 
-.music_logo_container:active{
+.logo_Music_container:active{
     --logo_color: white;
 }
 

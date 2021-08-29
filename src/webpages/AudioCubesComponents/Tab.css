@@ -1,32 +1,24 @@
 .tab {
-  width: 120px;
-  height: 170px;
   background-color: var(--audioCubes_tabs_bg_color);
-  margin-inline: 25px;
-  margin-block: 25px;
-  border-radius: 20px;
+  border-radius: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 4px solid var(--audioCubes_tabs_shadow_color);
-  border-left: 3px solid var(--audioCubes_tabs_shadow_color);
-  box-shadow: -2px 1px 5px rgb(0, 0, 0);
   transition: 1s;
 }
 
 .tab:hover {
-  background-color: rgb(255, 243, 173);
+  background-color: rgb(255, 238, 139);
   --audioCubes_tabs_shadow_color: white;
-  box-shadow: -2px 1px 5px rgb(255, 235, 119);
+  box-shadow: 0px 0px 5px rgb(214, 214, 214);
   transition: 0s;
 }
 
 .tab:active {
-  border-bottom: 1px solid var(--audioCubes_tabs_shadow_color);
-  border-left: 1px solid var(--audioCubes_tabs_shadow_color);
-  margin-inline: 26px;
-  /* box-shadow: -4px 3px 10px rgb(255, 235, 119); */
-  
+  box-shadow: 0px 0px 12px rgb(255, 235, 119);
+  border-bottom: 0px solid var(--audioCubes_tabs_shadow_color);
+  border-left: 0px solid var(--audioCubes_tabs_shadow_color);
+    transition: 0s;
 }
 
 .tabText {
@@ -37,46 +29,94 @@
 
 .audioCubes:hover .tab .tabText {
   opacity: 1;
-  transition: 500ms;
+  transition: opacity 500ms;
+}
+
+.tab:active .tabText {
+  color: white;
 }
 
 #F_tab:active {
   --audioCubes_tabs_shadow_color: white;
-  background-color: rgb(229, 128, 255);
-  transition: 0s;
+  background-color: rgb(229, 123, 255);
+
 }
 
 #G_tab:active {
   --audioCubes_tabs_shadow_color: white;
-  background-color: rgb(168, 168, 255);
+  background-color: rgb(155, 155, 255);
 }
 
 #H_tab:active {
   --audioCubes_tabs_shadow_color: white;
-  background-color: rgb(174, 250, 255);
+  background-color: rgb(160, 249, 255);
 }
 
 #J_tab:active {
   --audioCubes_tabs_shadow_color: white;
-  background-color: rgb(169, 255, 181);
+  background-color: rgb(147, 255, 121);
 }
 
 #V_tab:active {
   --audioCubes_tabs_shadow_color: white;
-  background-color: rgb(233, 255, 136);
+  background-color: rgb(255, 243, 81);
 }
 
 #B_tab:active {
   --audioCubes_tabs_shadow_color: white;
-  background-color: rgb(255, 213, 136);
+  background-color: rgb(255, 174, 98);
 }
 
 #N_tab:active {
   --audioCubes_tabs_shadow_color: white;
-  background-color: rgb(255, 137, 137);
+  background-color: rgb(255, 100, 100);
 }
 
 #M_tab:active {
   --audioCubes_tabs_shadow_color: white;
-  background-color: rgb(255, 149, 190);
+  background-color: rgb(255, 122, 173);
+}
+
+/* shelfs */
+
+.top_shelf_tabs {
+  width: 130px;
+  height: 130px;
+  border-bottom: 2px solid var(--audioCubes_tabs_shadow_color);
+  border-left: 2px solid var(--audioCubes_tabs_shadow_color);
+  box-shadow: -2px 1px 5px rgb(34, 34, 34);
+}
+
+.top_shelf_tabs:active {
+  margin-left: -2px;
+}
+
+.mid_shelf_tabs {
+  width: 180px;
+  height: 180px;
+  box-shadow: inset -2px 1px 1px rgb(29, 29, 29);
+  border-bottom: 1px solid var(--audioCubes_tabs_shadow_color);
+  border-left: 1px solid var(--audioCubes_tabs_shadow_color);
+}
+
+.mid_shelf_tabs:active {
+  margin-left: -1px;
+}
+
+.bottom_shelf_small_tabs {
+  width: 120px;
+  height: 120px;
+  border-bottom: 1px solid var(--audioCubes_tabs_shadow_color);
+  border-left: 1px solid var(--audioCubes_tabs_shadow_color);
+}
+
+.audiocubes_bottom_shelf .tab:active {
+  padding-left: 1px;
+}
+
+.bottom_shelf_big_tabs {
+  width: 180px;
+  height: 180px;
+  border-bottom: 1px solid var(--audioCubes_tabs_shadow_color);
+  border-left: 1px solid var(--audioCubes_tabs_shadow_color);
 }

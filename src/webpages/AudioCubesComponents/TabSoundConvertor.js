@@ -4,7 +4,6 @@ import "./TabSoundConvertor.css";
 export const TabSoundConvertor = ({ tabSoundChange }) => {
   return (
     <div className="tab_convertor_container">
-      {/* <h2 id="capslock">CapsLock</h2> */}
       <form className="sound_conv_form">
         <div className="sound_conv_holders">
           <input

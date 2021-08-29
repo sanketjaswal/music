@@ -1,10 +1,10 @@
 import React from "react";
 import "./Tab.css";
 
-export const Tab = ({ noteDown, tab, noteUp }) => {
+export const Tab = ({ noteDown, tab, noteUp, clas }) => {
   return (
     <div
-      className="tab"
+      className={`tab ${clas}`}
       id={tab + "_tab"}
       onMouseDown={() => {
         noteDown(tab);

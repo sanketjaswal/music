@@ -1,0 +1,37 @@
+.speaker_container {
+  width: 110px;
+  height: 100px;
+  background-color: rgb(99, 99, 99);
+  position: absolute;
+  border-radius: 60%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 27.5%;
+}
+
+.left_speaker {
+  left: 15px;
+  transform: skewX(-30deg) skewY(30deg);
+  box-shadow: inset -20px 20px 40px rgb(34, 34, 34);
+}
+
+.right_speaker {
+  right: 15px;
+  transform: skewX(30deg) skewY(-30deg);
+  box-shadow: inset 20px 20px 40px rgb(34, 34, 34);
+}
+
+.speaker_table {
+  /* border: 1px solid #2e2e2e; */
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.speaker_table td {
+  border: 0px solid rgb(99, 99, 99);
+  background-color: #242424;
+  border-radius: 8px;
+}

@@ -27,17 +27,17 @@
   height: 130px;
   background: linear-gradient(
     to right,
-    rgb(107, 255, 93) 0%,
+    rgb(236, 165, 72) 0%,
     white 35%,
-    rgb(126, 255, 132) 75%
+    rgb(247, 172, 87) 75%
   );
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
   border-radius: 5px;
-  border-left: 4px solid rgba(63, 143, 53, 0.788);
-  border-bottom: 5px solid rgb(57, 88, 48);
+  border-left: 4px solid rgb(163, 116, 30);
+  border-bottom: 5px solid rgb(116, 87, 24);
   transition: 1s;
   transform: skewY(-15deg) skewX(25deg) rotate(-6deg);
   box-shadow: 3px 4px 8px var(--body-color);

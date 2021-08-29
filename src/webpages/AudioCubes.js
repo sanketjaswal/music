@@ -2,6 +2,7 @@ import { React, useEffect } from "react";
 import "./AudioCubes.css";
 import { TabSoundConvertor } from "./AudioCubesComponents/TabSoundConvertor";
 import { Tab } from "./AudioCubesComponents/Tab";
+import { AudioCubeSpeakers } from "./AudioCubesComponents/AudioCubeSpeakers";
 
 export const AudioCubes = () => {
   useEffect(() => {
@@ -57,18 +58,76 @@ export const AudioCubes = () => {
   return (
     <div className="audioCubes_Page_body">
       <div className="audioCubes_container">
-        <div className="audioCubes">
-          <Tab noteUp={noteUp} noteDown={noteDown} tab={tabs[0]} />
-          <Tab noteUp={noteUp} noteDown={noteDown} tab={tabs[1]} />
-          <Tab noteUp={noteUp} noteDown={noteDown} tab={tabs[2]} />
-          <Tab noteUp={noteUp} noteDown={noteDown} tab={tabs[3]} />
-          <Tab noteUp={noteUp} noteDown={noteDown} tab={tabs[4]} />
-          <Tab noteUp={noteUp} noteDown={noteDown} tab={tabs[5]} />
-          <Tab noteUp={noteUp} noteDown={noteDown} tab={tabs[6]} />
-          <Tab noteUp={noteUp} noteDown={noteDown} tab={tabs[7]} />
+        <div className="speakers_container">
+          <AudioCubeSpeakers clas="left_speaker" />
+          <AudioCubeSpeakers clas="right_speaker" />
         </div>
-        <TabSoundConvertor tabSoundChange={tabSoundChange} />
+        <div className="audioCubes">
+          <div className="audiocubes_top_shelf">
+            <div className="audio_top_tabs_holder">
+              <Tab
+                noteUp={noteUp}
+                noteDown={noteDown}
+                clas="top_shelf_tabs"
+                tab={tabs[0]}
+              />
+            </div>
+            <div className="audio_top_tabs_holder">
+              <Tab
+                noteUp={noteUp}
+                noteDown={noteDown}
+                clas="top_shelf_tabs"
+                tab={tabs[1]}
+              />
+            </div>
+          </div>
+          <div className="audiocubes_mid_shelf">
+            <div className="audio_mid_tabs_holder">
+              <Tab
+                noteUp={noteUp}
+                noteDown={noteDown}
+                clas="mid_shelf_tabs"
+                tab={tabs[2]}
+              />
+            </div>
+            <div className="audio_mid_tabs_holder">
+              <Tab
+                noteUp={noteUp}
+                noteDown={noteDown}
+                clas="mid_shelf_tabs"
+                tab={tabs[3]}
+              />
+            </div>
+          </div>
+          <div className="audiocubes_bottom_shelf">
+            <Tab
+              noteUp={noteUp}
+              noteDown={noteDown}
+              clas="bottom_shelf_big_tabs"
+              tab={tabs[4]}
+            />
+            <Tab
+              noteUp={noteUp}
+              noteDown={noteDown}
+              clas="bottom_shelf_small_tabs"
+              tab={tabs[5]}
+            />
+            <Tab
+              noteUp={noteUp}
+              noteDown={noteDown}
+              clas="bottom_shelf_small_tabs"
+              tab={tabs[6]}
+            />
+            <Tab
+              noteUp={noteUp}
+              noteDown={noteDown}
+              clas="bottom_shelf_big_tabs"
+              tab={tabs[7]}
+            />
+          </div>
+        </div>
       </div>
+      {/* <TabSoundConvertor tabSoundChange={tabSoundChange} /> */}
     </div>
   );
 };

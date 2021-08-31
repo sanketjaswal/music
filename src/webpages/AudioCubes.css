@@ -1,5 +1,5 @@
 :root {
-  --audioCubes_body_bg_color: rgb(202, 137, 75);
+  /* --audioCubes_body_bg_color: rgb(202, 137, 75); */
   --audioCubes_container_bg_color: rgb(80, 80, 80);
   --audioCubes_tabs_bg_color: rgba(236, 213, 232, 0.692);
   --audioCubes_tabs_shadow_color: rgb(59, 59, 59);
@@ -8,11 +8,12 @@
 .audioCubes_Page_body {
   min-width: 100%;
   min-height: 100vh;
-  background-color: var(--audioCubes_body_bg_color);
+  background-color: var(--light_indicator_color);
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  transition: 1s;
 }
 
 .audioCubes_container {
@@ -32,6 +33,8 @@
   border-left: 8px solid var(--audioCubes_tabs_shadow_color);
   transform: skewY(-15deg) skewX(15deg) rotate(10deg);
   position: relative;
+    box-shadow: -8px 8px 15px rgb(255, 255, 255);
+
 }
 
 .speakers_container {

@@ -10,6 +10,8 @@ export const AudioCubes = () => {
     tabAudioPlayer();
   });
 
+  const Sounds = ["sine", "square", "triangle", "sawtooth"];
+
   const tabs = ["F", "G", "H", "J", "V", "B", "N", "M"];
   const freqArray = [261.6, 293.7, 329.6, 349.2, 392.0, 440.0, 493.9, 523.5];
 
@@ -20,6 +22,7 @@ export const AudioCubes = () => {
 
   const tabSoundChange = (node) => {
     note.type = node;
+    soundColorChange(node);
   };
 
   const tabAudioPlayer = () => {
@@ -54,6 +57,48 @@ export const AudioCubes = () => {
     noteUp(event.key);
   });
 
+  const soundColorChange = (node) => {
+    document.getElementsByClassName("sc_top_shelf_screen")[0].innerHTML = node;
+    if (node === Sounds[0]) {
+      document.documentElement.style.setProperty(
+        "--light_indicator_color",
+        "rgb(255, 101, 126)"
+      );
+    } else if (node === Sounds[1]) {
+      document.documentElement.style.setProperty(
+        "--light_indicator_color",
+        "rgb(33, 189, 33)"
+      );
+    } else if (node === Sounds[2]) {
+      document.documentElement.style.setProperty(
+        "--light_indicator_color",
+        "gold"
+      );
+    } else if (node === Sounds[3]) {
+      document.documentElement.style.setProperty(
+        "--light_indicator_color",
+        "rgb(33, 189, 181)"
+      );
+    }
+
+    for (var i = 0; i < Sounds.length; i++) {
+      if (i !== Sounds.indexOf(node)) {
+        document
+          .getElementsByClassName(Sounds[i])[0]
+          .firstChild.removeAttribute("id", "lever_on");
+        document.getElementsByClassName(Sounds[i])[0].style.backgroundColor =
+          "grey";
+      } else if (i === Sounds.indexOf(node)) {
+        document
+          .getElementsByClassName(Sounds[i])[0]
+          .firstChild.setAttribute("id", "lever_on");
+        document.getElementsByClassName(Sounds[i])[0].style.backgroundColor =
+          "var(--light_indicator_color)";
+      }
+      console.log(document.getElementsByClassName(Sounds[i])[0]);
+    }
+  };
+
   return (
     <div className="audioCubes_Page_body">
       <div className="audioCubes_container">
@@ -71,7 +116,10 @@ export const AudioCubes = () => {
                 tab={tabs[0]}
               />
             </div>
-            <TabSoundController />
+            <TabSoundController
+              tabSoundChange={tabSoundChange}
+              Sounds={Sounds}
+            />
             <div className="audio_top_tabs_holder">
               <Tab
                 noteUp={noteUp}

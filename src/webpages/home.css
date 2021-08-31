@@ -10,5 +10,9 @@ html, body {
 
 body {
   background-color: var(--body_color);
+  /* background-image: url("./pictures/texture-wood-1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; */
 }
 

@@ -90,6 +90,18 @@ export const Home = () => {
     document
       .getElementsByClassName("outer_circle")[0]
       .removeAttribute("id", "outer_circle_border");
+
+    for (var i = 0; i < navs.length; i++) {
+      document.getElementsByClassName(
+        `logo_${navs[i]}_container`
+      )[0].style.display = "none";
+    }
+    document.getElementsByClassName("logo_Music_container")[0].style.display =
+      "flex";
+    document.getElementsByClassName("tabs_holding_circle")[0].style.transform =
+      "rotate(0deg)";
+    document.getElementsByClassName("arrows")[0].style.display = "flex";
+    document.getElementsByClassName("arrows")[1].style.display = "flex";
   };
 
   const logo_change = (activeNav) => {

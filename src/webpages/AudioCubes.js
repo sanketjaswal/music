@@ -1,8 +1,9 @@
 import { React, useEffect } from "react";
 import "./AudioCubes.css";
-import { TabSoundConvertor } from "./AudioCubesComponents/TabSoundConvertor";
 import { Tab } from "./AudioCubesComponents/Tab";
 import { AudioCubeSpeakers } from "./AudioCubesComponents/AudioCubeSpeakers";
+import { TabSoundController } from "./AudioCubesComponents/TabSoundController";
+// import { TabSoundConvertor } from "./AudioCubesComponents/TabSoundConvertor";
 
 export const AudioCubes = () => {
   useEffect(() => {
@@ -18,7 +19,6 @@ export const AudioCubes = () => {
   note.type = "sine";
 
   const tabSoundChange = (node) => {
-    console.log(node);
     note.type = node;
   };
 
@@ -46,7 +46,6 @@ export const AudioCubes = () => {
   let activeKey = "";
 
   window.addEventListener("keydown", (event) => {
-    console.log(event);
     activeKey = event.key;
     noteDown(activeKey);
   });
@@ -72,6 +71,7 @@ export const AudioCubes = () => {
                 tab={tabs[0]}
               />
             </div>
+            <TabSoundController />
             <div className="audio_top_tabs_holder">
               <Tab
                 noteUp={noteUp}

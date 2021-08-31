@@ -1,7 +1,7 @@
 :root {
   --audioCubes_body_bg_color: rgb(202, 137, 75);
   --audioCubes_container_bg_color: rgb(80, 80, 80);
-  --audioCubes_tabs_bg_color: rgba(236, 213, 232, 0.61);
+  --audioCubes_tabs_bg_color: rgba(236, 213, 232, 0.692);
   --audioCubes_tabs_shadow_color: rgb(59, 59, 59);
 }
 
@@ -31,6 +31,7 @@
   border-bottom: 7px solid var(--audioCubes_tabs_shadow_color);
   border-left: 8px solid var(--audioCubes_tabs_shadow_color);
   transform: skewY(-15deg) skewX(15deg) rotate(10deg);
+  position: relative;
 }
 
 .speakers_container {

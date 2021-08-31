@@ -4,7 +4,7 @@ import "./AudioCubeSpeakers.css";
 export const AudioCubeSpeakers = ({ clas }) => {
   return (
     <div className={`speaker_container ${clas}`}>
-      <table class="speaker_table">
+      <table className="speaker_table">
         <tr>
           <td> </td>
           <td> </td>

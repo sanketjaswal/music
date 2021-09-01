@@ -53,7 +53,7 @@
 
 .d4:hover .disk_text {
   transform: rotate(10deg);
-  transition: 2.5s;
+  transition: 2s;
 }
 
 .disk_text {
@@ -66,7 +66,16 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: 3s;
+  transition: 2s;
+}
+
+.disk_text h4{
+  position: absolute;
+  bottom: -280px;
+  left: -0px;
+  color: white;
+  transform: rotate(195deg);
+  text-shadow: 1px 1px 1px rgb(75, 75, 75);
 }
 
 .disk_text h3:hover {

@@ -11,7 +11,7 @@ export const Home = () => {
   const pageChanger = (page) => {
     setTimeout(() => {
       pageHandler(page);
-      logoClick_stickRotator_back();
+      home_page_reseter();
     }, 2500);
   };
 
@@ -77,7 +77,7 @@ export const Home = () => {
       .setAttribute("id", "outer_circle_border");
   };
 
-  const logoClick_stickRotator_back = () => {
+  const home_page_reseter = () => {
     document
       .getElementsByClassName("base_rotator")[0]
       .removeAttribute("id", "base_rotation_on");

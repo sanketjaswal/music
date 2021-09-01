@@ -23,7 +23,7 @@ export const Xylophone = () => {
 
   return (
     <div className="xylophone_page_body">
-      <XyloSurroundings player={xyloBarSoundPlayer} />
+      {/* <XyloSurroundings player={xyloBarSoundPlayer} /> */}
       <XyloPlaySticks clas="stick2" />
       <XyloPlaySticks clas="stick1" />
       <div className="xylophone_container">

@@ -23,7 +23,7 @@ export const NavTabs = ({ navs, navRotator }) => {
           </li>
         </ul>
       </nav>
-      <div className="navs_hider"></div>
+      {/* <div className="navs_hider"></div> */}
       <div className="playing_stick_container"></div>
 
       <div className="make_visible_div">

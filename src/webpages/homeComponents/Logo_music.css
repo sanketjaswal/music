@@ -6,7 +6,7 @@
 .logo_Music_container {
   /* background: rgb(197, 31, 31); */
   width: 100px;
-  display: flex;
+  display: none;
   padding: 40px 80px;
   justify-content: center;
   /* transition: 2s; */

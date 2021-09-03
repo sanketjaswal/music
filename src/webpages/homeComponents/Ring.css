@@ -18,16 +18,15 @@
   border: 5px solid rgb(34, 34, 34);
 }
 
-.outer_circle:hover{
-    border: 5px solid rgb(85, 85, 85);
-    transition: .7s;
-
+.outer_circle:hover {
+  border: 5px solid rgb(85, 85, 85);
+  transition: 0.7s;
 }
 
 .outer_circle:hover .inner_circle {
   padding: 100px;
   transition: 0.8s;
-  
+
   /* width: 100px;
   height: 100px;  */
 }
@@ -70,8 +69,8 @@
   box-shadow: inset -3px -4px 6px black;
 }
 
-.logos_container{
-   display: flex;
+.logos_container {
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -81,19 +80,31 @@
   float: right;
 }
 
-
 /* after logo click */
 
-#inner_circle_shrink{
+#inner_circle_shrink {
   padding: 45px;
 }
 
-#outer_circle_border{
+#outer_circle_border {
   border: 5px solid rgb(175, 175, 175);
 }
 
-@media only screen and (max-width: 450px){
-  .outer_circle{
-    display: none;
+@media only screen and (max-width: 450px) {
+  .outer_circle {
+    width: 110vw;
+    height: 110vw;
+    left: -5vw;
+    top: -25vh;
+  }
+
+  .inner_circle {
+    width: 1%;
+    height:1%;
+    /* display: none; */
+  }
+
+  .logos_container {
+  display: none;
   }
 }

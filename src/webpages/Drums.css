@@ -82,7 +82,7 @@
   display: none;
 }
 
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 400px){
   .drums_container{
     transform: rotate(90deg);
   }

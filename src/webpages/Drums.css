@@ -81,3 +81,9 @@
 .drum_audio {
   display: none;
 }
+
+@media only screen and (max-width: 450px){
+  .drums_container{
+    transform: rotate(90deg);
+  }
+}

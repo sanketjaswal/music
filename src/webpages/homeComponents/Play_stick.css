@@ -118,3 +118,9 @@
 #base_rotation_on{
   transform: rotate(160deg);
 }
+
+@media only screen and (max-width: 450px){
+  .base_rotator{
+    display: none;
+  }
+}

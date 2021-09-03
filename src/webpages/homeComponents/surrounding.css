@@ -137,3 +137,10 @@
 .instagram {
   background: url("./icons/icons8-instagram-circle-30.png");
 }
+
+
+@media only screen and (max-width: 450px){
+  .disk_texture{
+    display: none;
+  }
+}

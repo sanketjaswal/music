@@ -6,8 +6,6 @@ import { Surrounding } from "./homeComponents/Surrounding";
 import "./home.css";
 
 export const Home = () => {
-  // alert("gg");
-
   const history = useHistory();
 
   const pageChanger = (page) => {

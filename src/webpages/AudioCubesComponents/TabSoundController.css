@@ -9,6 +9,7 @@
   display: flex;
   justify-content: center;
   margin-top: -15px;
+
 }
 
 .sound_control_holder {
@@ -59,7 +60,7 @@
   font-size: 11px;
   text-shadow: 1px 1px 1px white;
   border-radius: 5px;
-  box-shadow:  0px 0px 2px white
+  box-shadow: 0px 0px 2px white;
 }
 
 /* bottom shelf */
@@ -76,18 +77,18 @@
   box-shadow: inset 0px 0px 5px var(--light_indicator_color);
 }
 
-.controller_holder{
-    width: 10%;
-    height: 80%;
-    border: 1px solid rgb(160, 160, 160);
-    background-color: grey;   
-    display: flex;
-    justify-content: center;
-    position: relative;
-    transition: 1s;
+.controller_holder {
+  width: 10%;
+  height: 80%;
+  border: 1px solid rgb(160, 160, 160);
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  transition: 1s;
 }
 
-.control_lever{
+.control_lever {
   width: 155%;
   height: 15%;
   background-color: rgb(59, 59, 59);
@@ -101,7 +102,24 @@
   box-shadow: 0px 0px 1px white;
 }
 
-#lever_on{
+#lever_on {
   margin-top: 5px;
   transition: 1s;
+}
+
+@media only screen and (max-width: 450px) {
+  .sound_control_container {
+    /* display: none; */
+    width: 100px;
+    height: 90px;
+  }
+
+  .sound_control_holder {
+  width: 95%;
+  height: 100%;
+  }
+
+  .control_lever{
+    display: none;
+  }
 }

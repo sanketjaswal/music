@@ -18,7 +18,7 @@
   box-shadow: 0px 0px 12px rgb(255, 235, 119);
   border-bottom: 0px solid var(--audioCubes_tabs_shadow_color);
   border-left: 0px solid var(--audioCubes_tabs_shadow_color);
-    transition: 0s;
+  transition: 0s;
 }
 
 .tabText {
@@ -39,7 +39,6 @@
 #F_tab:active {
   --audioCubes_tabs_shadow_color: white;
   background-color: rgb(229, 123, 255);
-
 }
 
 #G_tab:active {
@@ -119,4 +118,11 @@
   height: 180px;
   border-bottom: 1px solid var(--audioCubes_tabs_shadow_color);
   border-left: 1px solid var(--audioCubes_tabs_shadow_color);
+}
+
+@media only screen and (max-width: 450px) {
+  .top_shelf_tabs {
+    width: 85%;
+    height: 85%;
+  }
 }

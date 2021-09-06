@@ -31,10 +31,9 @@
   border-top-left-radius: 60px;
   border-bottom: 7px solid var(--audioCubes_tabs_shadow_color);
   border-left: 8px solid var(--audioCubes_tabs_shadow_color);
-  transform: skewY(-15deg) skewX(15deg) rotate(10deg);
+  /* transform: skewY(-15deg) skewX(15deg) rotate(10deg); */
   position: relative;
-    box-shadow: -8px 8px 15px rgb(255, 255, 255);
-
+  box-shadow: -8px 8px 15px rgb(255, 255, 255);
 }
 
 .speakers_container {
@@ -48,17 +47,18 @@
 }
 
 .audioCubes {
+  width: 690px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 690px;
 }
 
 /* top shelf */
 
 .audiocubes_top_shelf {
   width: 100%;
+  height: auto;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -72,7 +72,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-inline:10px;
+  margin-inline: 10px;
   margin-top: -10px;
   border-left: 3px solid var(--audioCubes_tabs_shadow_color);
   border-bottom: 3px solid var(--audioCubes_tabs_shadow_color);
@@ -117,9 +117,39 @@
   border-bottom: 3px solid var(--audioCubes_tabs_shadow_color);
   border-left: 4px solid var(--audioCubes_tabs_shadow_color);
   border-right: 1px solid var(--audioCubes_tabs_shadow_color);
-  z-index: 1  ;
+  z-index: 1;
 }
 
 .audiocubes_bottom_shelf div {
   box-shadow: -3px 2px 3px rgb(34, 34, 34);
+}
+
+/* mobile phone */
+
+@media only screen and (max-width: 450px) {
+  .audioCubes_container {
+    /* transform: skewY(-15deg) skewX(15deg) rotate(100deg); */
+  }
+
+  .speakers_container {
+    display: none;
+  }
+
+  .audioCubes {
+    width: 75vh;
+  }
+
+  .audio_top_tabs_holder {
+    width: 50px;
+    height: 50px;
+    margin-top: -5px;
+  }
+
+  .audiocubes_mid_shelf {
+    display: none;
+  }
+
+  .audiocubes_bottom_shelf {
+    display: none;
+  }
 }

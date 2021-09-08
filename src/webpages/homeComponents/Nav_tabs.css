@@ -138,32 +138,32 @@
 
   .tabs_holding_circle li:nth-of-type(1) {
   transform: rotate(-90deg);
-  left: 31.5em;
-  top: 13.0em;
+  left: 32.5em;
+  top: 14.5em;
 }
 
 .tabs_holding_circle li:nth-of-type(2) {
   transform: rotate(-45deg);
-  left: 24em;
-  top: 26.5em;
+  left: 25.5em;
+  top: 28em;
 }
 
 .tabs_holding_circle li:nth-of-type(3) {
   transform: rotate(0deg);
- left: 13em;
-  top: 32.5em; 
+ left: 14.7em;
+  top: 33.5em; 
 }
 
 .tabs_holding_circle li:nth-of-type(4) {
   transform: rotate(45deg);
-  left: -0.5em;
-  top: 27em;
+  left: 1em;
+  top: 28.5em;
 }
 
 .tabs_holding_circle li:nth-of-type(5) {
   transform: rotate(90deg);
-  left  : -8.5em;
-  top: 14.3em;
+  left  : -7em;
+  top: 15.3em;
 }
 
   .tabs_holding_circle li a {
@@ -174,7 +174,7 @@
   width: 100px;
   height: 240px;
   left: 10.8em;
-  top: 16.8em;
+  top: 17.8em;
   color: white;
   opacity: 1;
   transform: rotate(-90deg);

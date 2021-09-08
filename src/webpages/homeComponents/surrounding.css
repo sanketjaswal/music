@@ -69,7 +69,7 @@
   transition: 2s;
 }
 
-.disk_text h4{
+.disk_text h4 {
   position: absolute;
   bottom: -280px;
   left: -0px;
@@ -138,9 +138,40 @@
   background: url("./icons/icons8-instagram-circle-30.png");
 }
 
+@media only screen and (max-width: 450px) {
+  .disk_texture {
+    width: 120vw;
+    height: 120vw;
+    left: -9vw;
+    top: -20vh;
+  }
 
-@media only screen and (max-width: 450px){
-  .disk_texture{
+  .d1,
+  .d2,
+  .d3 {
+    display: none;
+  }
+
+  .d4 {
+    left: -9.5vw;
+    top: 95vh;
+    opacity: 1;
+    transition: 0.5s;
+  }
+
+  .d4:hover {
+    left: -9.5vw;
+    top: -20vh;
+    opacity: 1;
+    transition: 1s;
+  }
+
+  .d4:hover .disk_text {
+    transform: rotate(0deg);
+    transition: 1s;
+  }
+
+  .disk_text h4 {
     display: none;
   }
 }

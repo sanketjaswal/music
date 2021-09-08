@@ -26,9 +26,6 @@
 .outer_circle:hover .inner_circle {
   padding: 100px;
   transition: 0.8s;
-
-  /* width: 100px;
-  height: 100px;  */
 }
 
 .inner_circle {
@@ -49,7 +46,6 @@
 .disk_top {
   display: flex;
   flex-direction: column;
-  /* justify-content: flex-start; */
   align-items: center;
 }
 
@@ -65,7 +61,6 @@
   height: 25px;
   background-color: white;
   border-radius: 100%;
-  box-shadow: 3px 3px 6px black;
   box-shadow: inset -3px -4px 6px black;
 }
 
@@ -92,19 +87,37 @@
 
 @media only screen and (max-width: 450px) {
   .outer_circle {
-    width: 110vw;
-    height: 110vw;
-    left: -5vw;
-    top: -25vh;
+    width: 120vw;
+    height: 120vw;
+    left: -11vw;
+    top: -20vh;
+  }
+
+  .outer_circle:hover .inner_circle {
+    padding: 60px;
+    transition: 0.8s;
   }
 
   .inner_circle {
-    width: 1%;
-    height:1%;
-    /* display: none; */
+    width: 55%;
+    height: 55%;
+    padding: 90px;
+  }
+
+  .Music_text {
+    font-size: 60px;
+    text-shadow: 2px 2px rgba(255, 255, 255, 0.925);
+  }
+
+  .disk_center {
+    width: 20px;
+    height: 20px;
+    box-shadow: inset -3px -4px 6px black;
   }
 
   .logos_container {
-  display: none;
+    display: none;
+    background-color: cadetblue;
+    
   }
 }

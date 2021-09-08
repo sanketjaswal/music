@@ -122,7 +122,28 @@
 
 @media only screen and (max-width: 450px) {
   .top_shelf_tabs {
-    width: 85%;
-    height: 85%;
+    width: 90%;
+    height: 90%;
+    border-bottom: 1px solid var(--audioCubes_tabs_shadow_color);
+    border-left: 1px solid var(--audioCubes_tabs_shadow_color);
+  }
+
+  .top_shelf_tabs:active {
+    margin-left: -1px;
+  }
+
+  .mid_shelf_tabs {
+    width: 92%;
+    height: 92%;
+  }
+
+  .bottom_shelf_big_tabs {
+    width: 105px;
+    height: 105px;
+  }
+
+  .bottom_shelf_small_tabs {
+    width: 60px;
+    height: 60px;
   }
 }

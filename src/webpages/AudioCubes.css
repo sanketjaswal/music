@@ -128,7 +128,11 @@
 
 @media only screen and (max-width: 450px) {
   .audioCubes_container {
-    /* transform: skewY(-15deg) skewX(15deg) rotate(100deg); */
+    border-bottom-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    border-top-right-radius: 45px;
+    border-top-left-radius: 45px;
+    transform: skewY(-15deg) skewX(15deg) rotate(100deg);
   }
 
   .speakers_container {
@@ -136,20 +140,31 @@
   }
 
   .audioCubes {
-    width: 75vh;
+    width: 64vh;
   }
 
   .audio_top_tabs_holder {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     margin-top: -5px;
   }
 
   .audiocubes_mid_shelf {
-    display: none;
+    /* display: none; */
+  }
+
+  .audio_mid_tabs_holder {
+    width: 120px;
+    height: 120px;
+    margin-top: -15px;
+    margin-inline: 5px;
   }
 
   .audiocubes_bottom_shelf {
-    display: none;
+    width: 95%;
+    /* background-color:red; */
+    margin-top: -14px;
+    margin-bottom: 4px;
+    border-radius: 60px;
   }
 }

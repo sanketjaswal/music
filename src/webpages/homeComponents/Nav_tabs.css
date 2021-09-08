@@ -27,8 +27,8 @@
 .tabs_holding_circle li:nth-of-type(2) {
   transform: rotate(-45deg);
   position: absolute;
-  left: 47.4em;
-  top: 2.2em;
+  left: 46.4em;
+  top: 1.2em;
 }
 .tabs_holding_circle li:nth-of-type(3) {
   position: absolute;
@@ -44,7 +44,7 @@
 .tabs_holding_circle li:nth-of-type(5) {
   transform: rotate(90deg);
   position: absolute;
-  left: 24.3em;
+  left: 22.3em;
   top: 59.2em;
 }
 

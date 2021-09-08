@@ -96,8 +96,8 @@
   }
 
   .bh2 {
-  padding-left: 23px;
-}
+    padding-left: 23px;
+  }
 
   .v_bar1 {
     background-color: var(--logo_color);
@@ -106,20 +106,19 @@
   }
 
   .v_bar2 {
-  background-color: var(--logo_color);
-  width: 18px;
-  height: 90px;
-  /* border-right: 3px solid var(--logo_shadow); */
-  box-shadow: 5px 0px var(--logo_shadow);
-}
+    background-color: var(--logo_color);
+    width: 18px;
+    height: 90px;
+    /* border-right: 3px solid var(--logo_shadow); */
+    box-shadow: 5px 0px var(--logo_shadow);
+  }
 
+  .circle {
+    width: 34px;
+    height: 34px;
+  }
 
-.circle {
-  width: 34px;
-  height: 34px;
-}
-
-.c1 {
-  left: -16px;
-}
+  .c1 {
+    left: -16px;
+  }
 }

@@ -9,7 +9,6 @@
   display: flex;
   justify-content: center;
   margin-top: -15px;
-
 }
 
 .sound_control_holder {
@@ -115,11 +114,22 @@
   }
 
   .sound_control_holder {
-  width: 95%;
-  height: 100%;
+    width: 95%;
+    height: 100%;
   }
 
-  .control_lever{
+  .sc_top_shelf_light {
+    width: 10px;
+    height: 10px;
+  }
+
+  .sc_top_shelf_screen {
+    width: 72%;
+    height: 10px;
+    font-size: 9px;
+  }
+
+  .control_lever {
     display: none;
   }
 }

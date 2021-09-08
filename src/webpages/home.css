@@ -2,10 +2,11 @@
   --body_color: rgb(197, 31, 31);
 }
 
-html, body {
+html,
+body {
   min-height: 100%;
   overflow-x: hidden;
-    overflow-y: hidden;
+  overflow-y: hidden;
 }
 
 body {
@@ -16,3 +17,11 @@ body {
   background-repeat: no-repeat; */
 }
 
+@media only screen and (max-width: 450px) {
+  html,
+  body {
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+}

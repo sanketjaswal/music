@@ -135,6 +135,7 @@
   .mid_shelf_tabs {
     width: 92%;
     height: 92%;
+    box-shadow: inset -1px 1px 1px rgb(29, 29, 29);
   }
 
   .bottom_shelf_big_tabs {
@@ -145,5 +146,9 @@
   .bottom_shelf_small_tabs {
     width: 60px;
     height: 60px;
+  }
+
+  .audioCubes:hover .tab .tabText {
+    opacity: 0;
   }
 }

@@ -31,7 +31,7 @@
   border-top-left-radius: 60px;
   border-bottom: 7px solid var(--audioCubes_tabs_shadow_color);
   border-left: 8px solid var(--audioCubes_tabs_shadow_color);
-  /* transform: skewY(-15deg) skewX(15deg) rotate(10deg); */
+  transform: skewY(-15deg) skewX(15deg) rotate(10deg);
   position: relative;
   box-shadow: -8px 8px 15px rgb(255, 255, 255);
 }
@@ -132,11 +132,13 @@
     border-bottom-left-radius: 70px;
     border-top-right-radius: 45px;
     border-top-left-radius: 45px;
+    border-bottom: 5px solid var(--audioCubes_tabs_shadow_color);
+    border-left: 6px solid var(--audioCubes_tabs_shadow_color);
     transform: skewY(-15deg) skewX(15deg) rotate(100deg);
   }
 
   .speakers_container {
-    display: none;
+    height: 80%;
   }
 
   .audioCubes {
@@ -149,20 +151,15 @@
     margin-top: -5px;
   }
 
-  .audiocubes_mid_shelf {
-    /* display: none; */
-  }
-
   .audio_mid_tabs_holder {
-    width: 120px;
-    height: 120px;
+    width: 115px;
+    height: 115px;
     margin-top: -15px;
     margin-inline: 5px;
   }
 
   .audiocubes_bottom_shelf {
     width: 95%;
-    /* background-color:red; */
     margin-top: -14px;
     margin-bottom: 4px;
     border-radius: 60px;

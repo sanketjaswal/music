@@ -35,3 +35,20 @@
   background-color: #242424;
   border-radius: 8px;
 }
+
+/* mobile phone  */
+
+@media only screen and (max-width: 450px) {
+  .speaker_container {
+    width: 70px;
+    height: 60px;
+  }
+
+  .left_speaker {
+    left: -3px;
+  }
+
+  .right_speaker {
+    right: -3px;
+  }
+}

@@ -174,7 +174,7 @@
     opacity: 0;
     transition: 0.5s;
   }
-
+/* 
 .d4:hover .disk_text h3, .d4:hover .disk_text div{
     transition: 2s;
     opacity: 100%;
@@ -183,7 +183,7 @@
   .disk_text h3, .disk_text div{
     transition: 1s;
     opacity: 0%;
-  }
+  } */
 
   .disk_text h4 {
     bottom: -200px;

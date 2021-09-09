@@ -1,7 +1,7 @@
 import React from "react";
 import { XylophoneBars } from "./xylophoneComponents/xylophone_bars";
 import { XyloPlaySticks } from "./xylophoneComponents/xylo_play_sticks";
-import { XyloSurroundings } from "./xylophoneComponents/xylo_surroundings";
+// import { XyloSurroundings } from "./xylophoneComponents/xylo_surroundings";
 import "./Xylophone.css";
 
 export const Xylophone = () => {

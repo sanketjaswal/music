@@ -7,19 +7,19 @@ export const NavTabs = ({ navs, navRotator }) => {
       <nav className="tabs_holding_circle">
         <ul>
           <li>
-            <a>{navs[0]}</a>
+            <a href="/">{navs[0]}</a>
           </li>
           <li>
-            <a>{navs[1]}</a>
+            <a href="/">{navs[1]}</a>
           </li>
           <li>
-            <a>{navs[2]}</a>
+            <a href="/">{navs[2]}</a>
           </li>
           <li>
-            <a>{navs[3]}</a>
+            <a href="/">{navs[3]}</a>
           </li>
           <li>
-            <a>{navs[4]}</a>
+            <a href="/">{navs[4]}</a>
           </li>
         </ul>
       </nav>

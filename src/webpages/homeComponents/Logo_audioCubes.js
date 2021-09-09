@@ -11,18 +11,11 @@ export const LogoAudioCubes = ({ click, pageChanger }) => {
       }}
     >
       <div className="logo_audioCubes_holder">
-        <div className="logo_audioCubes"></div>
-        <div className="logo_audioCubes"></div>
-        <div className="logo_audioCubes"></div>
-        <div className="logo_audioCubes"></div>
-        <div className="logo_audioCubes"></div>
-        <div className="logo_audioCubes"></div>
-        <div className="logo_audioCubes"></div>
-        <div className="logo_audioCubes"></div>
-        <div className="logo_audioCubes"></div>
-        <div className="logo_audioCubes"></div>
-        <div className="logo_audioCubes"></div>
-        <div className="logo_audioCubes"></div>
+        <div className="logo_audioCubes sl"></div>
+        <div className="logo_audioCubes sl"></div>
+        <div className="logo_audioCubes sl"></div>
+        <div className="logo_audioCubes ll"></div>
+        <div className="logo_audioCubes ll"></div>
       </div>
     </div>
   );

@@ -40,7 +40,6 @@ export const Home = () => {
       activeIndex += 1;
       activeNav = navs[activeIndex];
     }
-    console.log(activeNav);
     logo_change(activeNav);
     navRotatorDisappearer(evt);
   };
@@ -105,7 +104,6 @@ export const Home = () => {
   };
 
   const logo_change = (activeNav) => {
-    console.log(navs.indexOf(activeNav));
     for (var i = 0; i < navs.length; i++) {
       if (i !== navs.indexOf(activeNav)) {
         document.getElementsByClassName(

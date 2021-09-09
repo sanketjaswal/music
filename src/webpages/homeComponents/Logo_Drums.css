@@ -159,3 +159,69 @@
 .logo_Drums_container:active .logo_drum_1_base h5 {
   color: Green;
 }
+
+@media only screen and (max-width: 450px) {
+  .logo_Drums_container {
+    width: 130px;
+    height: 130px;
+    margin-top: 20px;
+  }
+
+  .logo_drum_1 {
+    width: 115px;
+    height: 115px;
+  }
+
+  .logo_drum_1_base {
+    width: 100px;
+    height: 100px;
+  }
+
+  .logo_drum_1_hook {
+    width: 6px;
+    height: 8px;
+  }
+
+  #logo_d1h_1 {
+    top: -6px;
+  }
+
+  #logo_d1h_2 {
+    top: -6px;
+  }
+
+  #logo_d1h_3 {
+    top: 43px;
+    left: -9px;
+  }
+
+  #logo_d1h_4 {
+    top: 43px;
+    right: -9px;
+  }
+
+  #logo_d1h_5 {
+    bottom: -6px;
+  }
+
+  #logo_d1h_6 {
+    bottom: -6px;
+  }
+
+  .logo_drum_2 {
+    width: 80px;
+    height: 30px;
+    bottom: 15px;
+    left: 5px;
+  }
+
+  .logo_drum_2_face {
+    width: 86px;
+    height: 3px;
+  }
+
+  .logo_drum_2_hook {
+    width: 4px;
+    height: 7px;
+  }
+}

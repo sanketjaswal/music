@@ -1,11 +1,11 @@
 import { React, useEffect } from "react";
-import "./Octapadess.css";
-import { Tab } from "./OctapadessComponents/Tab";
-import { OctapadesSpeakers } from "./OctapadessComponents/OctapadesSpeakers";
-import { TabSoundController } from "./OctapadessComponents/TabSoundController";
-// import { TabSoundConvertor } from "./OctapadessComponents/TabSoundConvertor";
+import "./Octapades.css";
+import { Tab } from "./OctapadesComponents/Tab";
+import { OctapadesSpeakers } from "./OctapadesComponents/OctapadesSpeakers";
+import { TabSoundController } from "./OctapadesComponents/TabSoundController";
+// import { TabSoundConvertor } from "./OctapadesComponents/TabSoundConvertor";
 
-export const Octapadess = () => {
+export const Octapades = () => {
   useEffect(() => {
     tabAudioPlayer();
   });
@@ -100,15 +100,15 @@ export const Octapadess = () => {
   };
 
   return (
-    <div className="audioCubes_Page_body">
-      <div className="audioCubes_container">
+    <div className="Octapades_Page_body">
+      <div className="Octapades_container">
         <div className="speakers_container">
           <OctapadesSpeakers clas="left_speaker" />
           <OctapadesSpeakers clas="right_speaker" />
         </div>
-        <div className="audioCubes">
-          <div className="audiocubes_top_shelf">
-            <div className="audio_top_tabs_holder">
+        <div className="Octapades">
+          <div className="Octapades_top_shelf">
+            <div className="Octapades_top_tabs_holder">
               <Tab
                 noteUp={noteUp}
                 noteDown={noteDown}
@@ -120,7 +120,7 @@ export const Octapadess = () => {
               tabSoundChange={tabSoundChange}
               Sounds={Sounds}
             />
-            <div className="audio_top_tabs_holder">
+            <div className="Octapades_top_tabs_holder">
               <Tab
                 noteUp={noteUp}
                 noteDown={noteDown}
@@ -129,8 +129,8 @@ export const Octapadess = () => {
               />
             </div>
           </div>
-          <div className="audiocubes_mid_shelf">
-            <div className="audio_mid_tabs_holder">
+          <div className="Octapades_mid_shelf">
+            <div className="Octapades_mid_tabs_holder">
               <Tab
                 noteUp={noteUp}
                 noteDown={noteDown}
@@ -138,7 +138,7 @@ export const Octapadess = () => {
                 tab={tabs[2]}
               />
             </div>
-            <div className="audio_mid_tabs_holder">
+            <div className="Octapades_mid_tabs_holder">
               <Tab
                 noteUp={noteUp}
                 noteDown={noteDown}
@@ -147,7 +147,7 @@ export const Octapadess = () => {
               />
             </div>
           </div>
-          <div className="audiocubes_bottom_shelf">
+          <div className="Octapades_bottom_shelf">
             <Tab
               noteUp={noteUp}
               noteDown={noteDown}

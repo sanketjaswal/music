@@ -19,7 +19,7 @@ export const Home = () => {
     history.push(`/${page}`);
   };
 
-  const navs = ["Piano", "Xylophone", "Music", "Drums", "AudioCubes"];
+  const navs = ["Piano", "Xylophone", "Music", "Drums", "Octapades"];
   let activeIndex = 2;
   let activeNav = navs[activeIndex];
 

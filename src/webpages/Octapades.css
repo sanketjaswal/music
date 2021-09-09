@@ -64,7 +64,7 @@
   position: relative;
 }
 
-.audio_top_tabs_holder {
+.Octapades_top_tabs_holder {
   width: 150px;
   height: 150px;
   background-color: var(--Octapades_container_bg_color);
@@ -87,7 +87,7 @@
   z-index: 2;
 }
 
-.audio_mid_tabs_holder {
+.Octapades_mid_tabs_holder {
   width: 192px;
   height: 192px;
   display: flex;
@@ -145,13 +145,13 @@
     width: 64vh;
   }
 
-  .audio_top_tabs_holder {
+  .Octapades_top_tabs_holder {
     width: 70px;
     height: 70px;
     margin-top: -5px;
   }
 
-  .audio_mid_tabs_holder {
+  .Octapades_mid_tabs_holder {
     width: 115px;
     height: 115px;
     margin-top: -15px;

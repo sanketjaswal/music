@@ -154,7 +154,7 @@
 
   .d4 {
     left: -9.5vw;
-    top: 95vh;
+    top: 90vh;
     opacity: 1;
     transition: 0.5s;
   }
@@ -172,6 +172,8 @@
   }
 
   .disk_text h4 {
-    display: none;
+    bottom: -210px;
+    left: 75px;
+    transform: rotate(180deg);
   }
 }

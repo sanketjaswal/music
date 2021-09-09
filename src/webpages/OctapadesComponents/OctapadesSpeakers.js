@@ -1,7 +1,7 @@
 import React from "react";
-import "./AudioCubeSpeakers.css";
+import "./OctapadesSpeakers.css";
 
-export const AudioCubeSpeakers = ({ clas }) => {
+export const OctapadesSpeakers = ({ clas }) => {
   return (
     <div className={`speaker_container ${clas}`}>
       <table className="speaker_table">

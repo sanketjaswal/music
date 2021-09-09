@@ -3,7 +3,7 @@ import { LogoMusic } from "./Logo_music";
 import { LogoXylophone } from "./Logo_xylophone";
 import { LogoPiano } from "./Logo_piano";
 import { LogoDrums } from "./Logo_Drums";
-import { LogoAudioCubes } from "./Logo_audioCubes";
+import { LogoOctapades } from "./Logo_Octapades";
 import "./Ring.css";
 
 export const Ring = ({ click, pageChanger }) => {
@@ -19,7 +19,7 @@ export const Ring = ({ click, pageChanger }) => {
           <LogoXylophone click={click} pageChanger={pageChanger} />
           <LogoMusic click={click} pageChanger={pageChanger} />
           <LogoDrums click={click} pageChanger={pageChanger} />
-          <LogoAudioCubes click={click} pageChanger={pageChanger} />
+          <LogoOctapades click={click} pageChanger={pageChanger} />
         </div>
       </div>
     </div>

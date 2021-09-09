@@ -1,4 +1,4 @@
-.logo_AudioCubes_container {
+.logo_Octapades_container {
   width: 150px;
   height: 150px;
   margin-top: 40px;
@@ -8,7 +8,7 @@
   align-items: center;
 }
 
-.logo_AudioCubes_container:hover .logo_audioCubes_holder {
+.logo_Octapades_container:hover .logo_Octapades_holder {
   background-color: rgb(0, 193, 207);
   border-left: 4px solid rgb(0, 160, 172);
   border-bottom: 5px solid rgb(0, 148, 148);
@@ -17,7 +17,7 @@
   transition: 0.5s;
 }
 
-.logo_audioCubes_holder {
+.logo_Octapades_holder {
   width: 100px;
   height: 100px;
   background-color: darkgray;
@@ -33,7 +33,7 @@
   box-shadow: 3px 4px 8px var(--body-color);
 }
 
-.logo_audioCubes {
+.logo_Octapades {
   border-left: 2px solid rgb(114, 114, 114);
   border-bottom: 2px solid rgb(43, 43, 43);
   transition: 1s;
@@ -53,23 +53,23 @@
   margin: 1;
 }
 
-.logo_audioCubes:hover{
+.logo_Octapades:hover{
   background-color: rgba(255, 255, 255, 0.904);
 }
 
-.logo_AudioCubes_container:active .logo_audioCubes_holder {
+.logo_Octapades_container:active .logo_Octapades_holder {
   margin: 4px 5px 0px 0px;
   transition: 0s;
 }
 
 @media only screen and (max-width: 450px) {
-  .logo_AudioCubes_container {
+  .logo_Octapades_container {
     width: 130px;
     height: 130px;
     margin-top: 20px;
   }
 
-  .logo_audioCubes_holder {
+  .logo_Octapades_holder {
     width: 80px;
     height: 80px;
   }

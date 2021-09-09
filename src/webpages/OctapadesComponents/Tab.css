@@ -1,5 +1,5 @@
 .tab {
-  background-color: var(--audioCubes_tabs_bg_color);
+  background-color: var(--Octapades_tabs_bg_color);
   border-radius: 100%;
   display: flex;
   align-items: center;
@@ -9,15 +9,15 @@
 
 .tab:hover {
   background-color: rgb(255, 238, 139);
-  --audioCubes_tabs_shadow_color: white;
+  --Octapades_tabs_shadow_color: white;
   box-shadow: 0px 0px 5px rgb(214, 214, 214);
   transition: 0s;
 }
 
 .tab:active {
   box-shadow: 0px 0px 12px rgb(255, 235, 119);
-  border-bottom: 0px solid var(--audioCubes_tabs_shadow_color);
-  border-left: 0px solid var(--audioCubes_tabs_shadow_color);
+  border-bottom: 0px solid var(--Octapades_tabs_shadow_color);
+  border-left: 0px solid var(--Octapades_tabs_shadow_color);
   transition: 0s;
 }
 
@@ -27,7 +27,7 @@
   transition: 800ms;
 }
 
-.audioCubes:hover .tab .tabText {
+.Octapades:hover .tab .tabText {
   opacity: 1;
   transition: opacity 500ms;
 }
@@ -37,42 +37,42 @@
 }
 
 #F_tab:active {
-  --audioCubes_tabs_shadow_color: white;
+  --Octapades_tabs_shadow_color: white;
   background-color: rgb(229, 123, 255);
 }
 
 #G_tab:active {
-  --audioCubes_tabs_shadow_color: white;
+  --Octapades_tabs_shadow_color: white;
   background-color: rgb(155, 155, 255);
 }
 
 #H_tab:active {
-  --audioCubes_tabs_shadow_color: white;
+  --Octapades_tabs_shadow_color: white;
   background-color: rgb(160, 249, 255);
 }
 
 #J_tab:active {
-  --audioCubes_tabs_shadow_color: white;
+  --Octapades_tabs_shadow_color: white;
   background-color: rgb(147, 255, 121);
 }
 
 #V_tab:active {
-  --audioCubes_tabs_shadow_color: white;
+  --Octapades_tabs_shadow_color: white;
   background-color: rgb(255, 243, 81);
 }
 
 #B_tab:active {
-  --audioCubes_tabs_shadow_color: white;
+  --Octapades_tabs_shadow_color: white;
   background-color: rgb(255, 174, 98);
 }
 
 #N_tab:active {
-  --audioCubes_tabs_shadow_color: white;
+  --Octapades_tabs_shadow_color: white;
   background-color: rgb(255, 100, 100);
 }
 
 #M_tab:active {
-  --audioCubes_tabs_shadow_color: white;
+  --Octapades_tabs_shadow_color: white;
   background-color: rgb(255, 122, 173);
 }
 
@@ -81,8 +81,8 @@
 .top_shelf_tabs {
   width: 130px;
   height: 130px;
-  border-bottom: 2px solid var(--audioCubes_tabs_shadow_color);
-  border-left: 2px solid var(--audioCubes_tabs_shadow_color);
+  border-bottom: 2px solid var(--Octapades_tabs_shadow_color);
+  border-left: 2px solid var(--Octapades_tabs_shadow_color);
   box-shadow: -2px 1px 5px rgb(34, 34, 34);
 }
 
@@ -94,8 +94,8 @@
   width: 180px;
   height: 180px;
   box-shadow: inset -2px 1px 1px rgb(29, 29, 29);
-  border-bottom: 1px solid var(--audioCubes_tabs_shadow_color);
-  border-left: 1px solid var(--audioCubes_tabs_shadow_color);
+  border-bottom: 1px solid var(--Octapades_tabs_shadow_color);
+  border-left: 1px solid var(--Octapades_tabs_shadow_color);
 }
 
 .mid_shelf_tabs:active {
@@ -105,8 +105,8 @@
 .bottom_shelf_small_tabs {
   width: 120px;
   height: 120px;
-  border-bottom: 1px solid var(--audioCubes_tabs_shadow_color);
-  border-left: 1px solid var(--audioCubes_tabs_shadow_color);
+  border-bottom: 1px solid var(--Octapades_tabs_shadow_color);
+  border-left: 1px solid var(--Octapades_tabs_shadow_color);
 }
 
 .audiocubes_bottom_shelf .tab:active {
@@ -116,16 +116,16 @@
 .bottom_shelf_big_tabs {
   width: 180px;
   height: 180px;
-  border-bottom: 1px solid var(--audioCubes_tabs_shadow_color);
-  border-left: 1px solid var(--audioCubes_tabs_shadow_color);
+  border-bottom: 1px solid var(--Octapades_tabs_shadow_color);
+  border-left: 1px solid var(--Octapades_tabs_shadow_color);
 }
 
 @media only screen and (max-width: 450px) {
   .top_shelf_tabs {
     width: 90%;
     height: 90%;
-    border-bottom: 1px solid var(--audioCubes_tabs_shadow_color);
-    border-left: 1px solid var(--audioCubes_tabs_shadow_color);
+    border-bottom: 1px solid var(--Octapades_tabs_shadow_color);
+    border-left: 1px solid var(--Octapades_tabs_shadow_color);
   }
 
   .top_shelf_tabs:active {
@@ -148,7 +148,7 @@
     height: 60px;
   }
 
-  .audioCubes:hover .tab .tabText {
+  .Octapades:hover .tab .tabText {
     opacity: 0;
   }
 }

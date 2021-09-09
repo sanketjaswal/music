@@ -1,11 +1,11 @@
 import { React, useEffect } from "react";
-import "./AudioCubes.css";
-import { Tab } from "./AudioCubesComponents/Tab";
-import { AudioCubeSpeakers } from "./AudioCubesComponents/AudioCubeSpeakers";
-import { TabSoundController } from "./AudioCubesComponents/TabSoundController";
-// import { TabSoundConvertor } from "./AudioCubesComponents/TabSoundConvertor";
+import "./Octapadess.css";
+import { Tab } from "./OctapadessComponents/Tab";
+import { OctapadesSpeakers } from "./OctapadessComponents/OctapadesSpeakers";
+import { TabSoundController } from "./OctapadessComponents/TabSoundController";
+// import { TabSoundConvertor } from "./OctapadessComponents/TabSoundConvertor";
 
-export const AudioCubes = () => {
+export const Octapadess = () => {
   useEffect(() => {
     tabAudioPlayer();
   });
@@ -103,8 +103,8 @@ export const AudioCubes = () => {
     <div className="audioCubes_Page_body">
       <div className="audioCubes_container">
         <div className="speakers_container">
-          <AudioCubeSpeakers clas="left_speaker" />
-          <AudioCubeSpeakers clas="right_speaker" />
+          <OctapadesSpeakers clas="left_speaker" />
+          <OctapadesSpeakers clas="right_speaker" />
         </div>
         <div className="audioCubes">
           <div className="audiocubes_top_shelf">

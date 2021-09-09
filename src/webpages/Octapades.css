@@ -1,11 +1,11 @@
 :root {
-  /* --audioCubes_body_bg_color: rgb(202, 137, 75); */
-  --audioCubes_container_bg_color: rgb(80, 80, 80);
-  --audioCubes_tabs_bg_color: rgba(236, 213, 232, 0.692);
-  --audioCubes_tabs_shadow_color: rgb(59, 59, 59);
+  /* --Octapades_body_bg_color: rgb(202, 137, 75); */
+  --Octapades_container_bg_color: rgb(80, 80, 80);
+  --Octapades_tabs_bg_color: rgba(236, 213, 232, 0.692);
+  --Octapades_tabs_shadow_color: rgb(59, 59, 59);
 }
 
-.audioCubes_Page_body {
+.Octapades_Page_body {
   min-width: 100%;
   min-height: 100vh;
   background-color: var(--light_indicator_color);
@@ -16,21 +16,21 @@
   transition: 1s;
 }
 
-.audioCubes_container {
+.Octapades_container {
   width: auto;
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--audioCubes_container_bg_color);
+  background-color: var(--Octapades_container_bg_color);
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom-right-radius: 100px;
   border-bottom-left-radius: 100px;
   border-top-right-radius: 60px;
   border-top-left-radius: 60px;
-  border-bottom: 7px solid var(--audioCubes_tabs_shadow_color);
-  border-left: 8px solid var(--audioCubes_tabs_shadow_color);
+  border-bottom: 7px solid var(--Octapades_tabs_shadow_color);
+  border-left: 8px solid var(--Octapades_tabs_shadow_color);
   transform: skewY(-15deg) skewX(15deg) rotate(10deg);
   position: relative;
   box-shadow: -8px 8px 15px rgb(255, 255, 255);
@@ -46,7 +46,7 @@
   border-top: 3px solid rgb(90, 90, 90);
 }
 
-.audioCubes {
+.Octapades {
   width: 690px;
   display: flex;
   flex-direction: column;
@@ -56,7 +56,7 @@
 
 /* top shelf */
 
-.audiocubes_top_shelf {
+.Octapades_top_shelf {
   width: 100%;
   height: auto;
   display: flex;
@@ -67,20 +67,20 @@
 .audio_top_tabs_holder {
   width: 150px;
   height: 150px;
-  background-color: var(--audioCubes_container_bg_color);
+  background-color: var(--Octapades_container_bg_color);
   border-radius: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-inline: 10px;
   margin-top: -10px;
-  border-left: 3px solid var(--audioCubes_tabs_shadow_color);
-  border-bottom: 3px solid var(--audioCubes_tabs_shadow_color);
+  border-left: 3px solid var(--Octapades_tabs_shadow_color);
+  border-bottom: 3px solid var(--Octapades_tabs_shadow_color);
 }
 
 /* mid shelf */
 
-.audiocubes_mid_shelf {
+.Octapades_mid_shelf {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -94,17 +94,17 @@
   justify-content: center;
   align-items: center;
   margin-inline: 10px;
-  background-color: var(--audioCubes_container_bg_color);
+  background-color: var(--Octapades_container_bg_color);
   border-radius: 100%;
   margin-top: -45px;
-  border-bottom: 3px solid var(--audioCubes_tabs_shadow_color);
-  border-left: 3px solid var(--audioCubes_tabs_shadow_color);
-  border-right: 1px solid var(--audioCubes_tabs_shadow_color);
+  border-bottom: 3px solid var(--Octapades_tabs_shadow_color);
+  border-left: 3px solid var(--Octapades_tabs_shadow_color);
+  border-right: 1px solid var(--Octapades_tabs_shadow_color);
 }
 
 /* bottom shelf */
 
-.audiocubes_bottom_shelf {
+.Octapades_bottom_shelf {
   width: 660px;
   display: flex;
   justify-content: space-between;
@@ -113,27 +113,27 @@
   padding: 4px;
   margin-top: -30px;
   margin-bottom: 7px;
-  background-color: var(--audioCubes_container_bg_color);
-  border-bottom: 3px solid var(--audioCubes_tabs_shadow_color);
-  border-left: 4px solid var(--audioCubes_tabs_shadow_color);
-  border-right: 1px solid var(--audioCubes_tabs_shadow_color);
+  background-color: var(--Octapades_container_bg_color);
+  border-bottom: 3px solid var(--Octapades_tabs_shadow_color);
+  border-left: 4px solid var(--Octapades_tabs_shadow_color);
+  border-right: 1px solid var(--Octapades_tabs_shadow_color);
   z-index: 1;
 }
 
-.audiocubes_bottom_shelf div {
+.Octapades_bottom_shelf div {
   box-shadow: -3px 2px 3px rgb(34, 34, 34);
 }
 
 /* mobile phone */
 
 @media only screen and (max-width: 450px) {
-  .audioCubes_container {
+  .Octapades_container {
     border-bottom-right-radius: 70px;
     border-bottom-left-radius: 70px;
     border-top-right-radius: 45px;
     border-top-left-radius: 45px;
-    border-bottom: 5px solid var(--audioCubes_tabs_shadow_color);
-    border-left: 6px solid var(--audioCubes_tabs_shadow_color);
+    border-bottom: 5px solid var(--Octapades_tabs_shadow_color);
+    border-left: 6px solid var(--Octapades_tabs_shadow_color);
     transform: skewY(-15deg) skewX(15deg) rotate(100deg);
   }
 
@@ -141,7 +141,7 @@
     height: 80%;
   }
 
-  .audioCubes {
+  .Octapades {
     width: 64vh;
   }
 
@@ -158,7 +158,7 @@
     margin-inline: 5px;
   }
 
-  .audiocubes_bottom_shelf {
+  .Octapades_bottom_shelf {
     width: 95%;
     margin-top: -14px;
     margin-bottom: 4px;

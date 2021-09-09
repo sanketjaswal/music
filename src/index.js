@@ -5,7 +5,7 @@ import App from "./App";
 import { Piano } from "./webpages/piano";
 import { Xylophone } from "./webpages/Xylophone";
 import { Drums } from "./webpages/Drums";
-import { AudioCubes } from "./webpages/AudioCubes";
+import { Octapades } from "./webpages/Octapades";
 import reportWebVitals from "./reportWebVitals";
 
 import { BrowserRouter as Router, Route } from "react-router-dom";
@@ -17,7 +17,7 @@ const Music = (
       <Route path="/Piano" component={Piano} />
       <Route path="/Xylophone" component={Xylophone} />
       <Route path="/Drums" component={Drums} />
-      <Route path="/AudioCubes" component={AudioCubes} />
+      <Route path="/Octapades" component={Octapades} />
     </div>
   </Router>
 );

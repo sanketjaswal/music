@@ -1,0 +1,100 @@
+:root{
+  --activeBigKeysColor : rgb(142, 142, 211);
+  --activeSmallKeysColor : rgb(158, 209, 148)
+}
+
+html ,body{
+    /* overflow-x: visible; */
+    min-width: 100%;
+    /* background-color: cyan; */
+}
+
+.piano{
+    width:100vw; 
+    height : 100vh;
+    background: chartreuse;
+}
+
+.KeyContainer{
+  display: flex; 
+  justify-content: center;
+  /* background-color: blue; */
+  height: 560px;
+}
+
+.KeyContainer:hover .biggerKey .keysText{
+    opacity: 1;
+  transition: 500ms;
+}
+
+.KeyContainer:hover .smallKey .keysText{
+    opacity: 1;
+  transition: 500ms;
+}
+
+
+.biggerKey{
+  height: 400px;
+  width: 100px;
+  background-color: rgb(245, 243, 243);
+  margin-left: 8px;
+  z-index: 0;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  border-right: 5px solid rgb(36, 20, 20);
+  border-bottom: 4px solid rgb(36, 20, 20);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px; 
+  transition: background-color 1s;
+  color: var(--activeBigKeysColor);
+}
+
+.smallKey{
+  height: 250px;
+  width: 60px;
+  background-color: black;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px; 
+  border-right: 4px solid rgb(53, 53, 53);
+  border-bottom: 3px solid rgb(53, 53, 53);
+  transition: background-color 1s;
+   margin-left: -33px;
+  margin-right: -33px;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+  color:var(--activeSmallKeysColor);
+}
+
+.biggerKey:hover{
+  border-right: 2px solid rgb(36, 20, 20);
+  border-bottom: 1px solid rgb(36, 20, 20);
+  background-color: var(--activeBigKeysColor);
+  margin-left:11px;
+  height: 401px;
+  transition: background-color 0s;
+  color :white;
+}
+
+.smallKey:hover{
+  border-right: 1px solid rgb(122, 121, 121);
+  border-bottom: .5px solid rgb(151, 150, 150);
+  background-color: var(--activeSmallKeysColor);
+  margin-left: -30px;
+  margin-right: -33px;
+  height: 252px;
+  transition: background-color 0s;
+  color: black;
+  /* font-size: small; */
+}
+
+.keysText{
+  width: 100%;
+  text-align: center;
+  font-family:monospace;
+  font-size: 25px;
+   opacity: 0;
+  transition: 800ms;
+
+}

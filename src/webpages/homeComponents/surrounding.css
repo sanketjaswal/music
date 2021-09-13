@@ -180,7 +180,7 @@
   .d4:hover .disk_text div {
     transition: 2s;
     opacity: 100%;
-  }
+  }`
 
   .disk_text h3,
   .disk_text div {

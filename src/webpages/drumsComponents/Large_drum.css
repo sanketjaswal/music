@@ -39,7 +39,6 @@
 }
 
 #Floor-Tom:active #ld_steel_bar {
-  
   width: 150px;
   transition: 0.1s;
 }
@@ -56,17 +55,19 @@
 
 /* stand */
 
-#Floor-Tom:active .ld_Stand_stick{
+#Floor-Tom:active .ld_Stand_stick {
   width: 5.5px;
   height: 84px;
   transition: 0.1s;
 }
 
+@media only screen and (max-width: 450px) {
+  #Floor-Tom {
+    left: 0%;
+    top: 300px;
+  }
 
-
-@media only screen and (max-width: 450px){
-#Floor-Tom {
-  left: 10%;
-  top: 300px;
-}
+  #Floor-Tom:active {
+    left: 0%;
+  }
 }

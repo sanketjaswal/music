@@ -48,7 +48,11 @@
 
 @media only screen and (max-width: 450px) {
   #Snare {
-    right: 5%;
+    right: 0%;
     top: 260px;
+  }
+
+  #Snare:active {
+    right: 0%;
   }
 }

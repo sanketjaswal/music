@@ -45,3 +45,10 @@
 #Snare:active .d_sb_2 {
   bottom: -12px;
 }
+
+@media only screen and (max-width: 450px) {
+  #Snare {
+    right: 5%;
+    top: 260px;
+  }
+}

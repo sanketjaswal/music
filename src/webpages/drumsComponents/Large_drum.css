@@ -61,3 +61,12 @@
   height: 84px;
   transition: 0.1s;
 }
+
+
+
+@media only screen and (max-width: 450px){
+#Floor-Tom {
+  left: 10%;
+  top: 300px;
+}
+}

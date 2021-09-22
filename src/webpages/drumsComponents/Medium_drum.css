@@ -38,7 +38,7 @@
 }
 
 #Big-Rack-Tom:active .d_base {
-  background-color: var(--drums_active_bg_color );
+  background-color: var(--drums_active_bg_color);
   transition: 0.1s;
   padding-top: 0px;
   margin-top: 6px;
@@ -58,7 +58,7 @@
   bottom: -11px;
 }
 
-#Big-Rack-Tom:active .md_stand_elbow_holder{
+#Big-Rack-Tom:active .md_stand_elbow_holder {
   transform: rotate(2deg);
   transition: 0.1s;
 }
@@ -82,7 +82,7 @@
 }
 
 #Small-Rack-Tom:active .d_base {
-  background-color: var(--drums_active_bg_color );
+  background-color: var(--drums_active_bg_color);
   transition: 0.1s;
   padding-top: 0px;
   margin-top: 9px;
@@ -102,7 +102,19 @@
   bottom: -11px;
 }
 
-#Small-Rack-Tom:active .md_stand_elbow_holder{
+#Small-Rack-Tom:active .md_stand_elbow_holder {
   transform: rotate(-2deg);
   transition: 0.1s;
+}
+
+@media only screen and (max-width: 450px) {
+  #Big-Rack-Tom {
+    left: 31%;
+    top: 155px;
+  }
+
+  #Small-Rack-Tom {
+    left: 64%;
+    top: 160px;
+  }
 }

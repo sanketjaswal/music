@@ -17,8 +17,7 @@ body {
   justify-content: center;
   /* align-items: center;   */
   background: chartreuse;
-    position: relative;
-
+  position: relative;
 }
 
 .KeyContainer {

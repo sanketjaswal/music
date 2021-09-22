@@ -11,6 +11,7 @@ body {
 
 body {
   background-color: var(--body_color);
+  user-select: none;
   /* background-image: url("./pictures/texture-wood-1.jpg");
   background-position: center;
   background-size: cover;

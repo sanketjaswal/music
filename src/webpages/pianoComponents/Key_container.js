@@ -13,6 +13,7 @@ export const KeyContainer = ({
   console.log(keyPressed);
   return (
     <div className="KeyContainer">
+      <div class="keysCover"></div>
       <BiggerKey
         onPianoPlay={onPianoPlay}
         onmouseDown={onmouseDown}

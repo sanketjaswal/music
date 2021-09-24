@@ -126,11 +126,34 @@ body {
 
 @media only screen and (max-width: 450px) {
   .KeyContainer {
-    transform: skewX(-5deg) skewY(5deg) rotate(90deg);
+    /* transform: skewX(-5deg) skewY(5deg) rotate(90deg); */
+    /* transform: rotate(90deg); */
+    height: 270px;
   }
 
   .biggerKey {
-    height: 330px;
-    width: 80px;
+    height: 250px;
+    width: 45px;
+    border-right: 4px solid rgb(51, 36, 24);
+    border-bottom: 3px solid rgb(51, 38, 29);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+
+  .smallKey {
+    height: 150px;
+    width: 30px;
+    margin-left: -20px;
+    margin-right: -20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-right: 3px solid rgb(53, 53, 53);
+    border-bottom: 2px solid rgb(53, 53, 53);
+  }
+
+  .smallKey:hover {
+    height: 151px;
+    margin-left: -18px;
+    margin-right: -20px;
   }
 }

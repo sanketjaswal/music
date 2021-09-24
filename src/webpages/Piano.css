@@ -47,13 +47,13 @@ body {
 
 .keysCover {
   width: 99.85%;
-  height:24px;
+  height: 24px;
   background-color: #88451b;
   position: absolute;
   z-index: 1;
   top: 0px;
   border-top-right-radius: 10px;
-  border-top-left-radius:10px ;
+  border-top-left-radius: 10px;
   border-right: 4px solid #442713;
   border-bottom: 4px solid #29180d;
 }
@@ -122,4 +122,15 @@ body {
   font-size: 25px;
   opacity: 0;
   transition: 800ms;
+}
+
+@media only screen and (max-width: 450px) {
+  .KeyContainer {
+    transform: skewX(-5deg) skewY(5deg) rotate(90deg);
+  }
+
+  .biggerKey {
+    height: 330px;
+    width: 80px;
+  }
 }

@@ -12,6 +12,12 @@ export const Tab = ({ noteDown, tab, noteUp, clas }) => {
       onMouseUp={() => {
         noteUp(tab);
       }}
+      ontouchstart={() => {
+        noteDown(tab);
+      }}
+      ontouchend={() => {
+        noteUp(tab);
+      }}
     >
       <h1 className="tabText">{tab}</h1>
     </div>

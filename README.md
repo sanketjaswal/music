@@ -1,37 +1,31 @@
-# Music App
-A fun music app named Taal.
+# Taal
 
-## Available Scripts
+Web App allows you to play and experiment with various instrument sounds.
 
-A fun music app
-### `npm start`
+### Usage
+#### link to appliction
 
-## Learn More
+```js
+https://sanketjaswal.github.io/music/
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Packages
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* `createOscillator` - Returns Oscillator Node to create sounds 
 
-### Code Splitting
+* `font awesome` - icons used in app
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* `icons8` - icons used in app
 
-### Analyzing the Bundle Size
+* `github-pages` - gh-pages used for hosting repo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Notes
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* Instrument Provided : Piano, Xylophone, Drums, Octapads
+* Click on the arrows to switch between the music instruments
+* Select any music instrument by clicking on their icon 
+* Click or press certain keys to play the sounds of the instruments 
+* Create a rhythm pressing those keys 
+  
